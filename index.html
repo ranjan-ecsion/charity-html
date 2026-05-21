@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanity - Empowering Change</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* =====================
+           CUSTOM PROPERTIES
+        ===================== */
+        :root {
+            --green: #7FC629;
+            --green-dark: #6ab020;
+            --white: #ffffff;
+            --black: #111111;
+            --gray-text: #888888;
+            --card-bg: #f9f7f2;
+            --card-border: #e8e4dc;
+            --nav-link: #dddddd;
+            --overlay: rgba(10, 10, 10, 0.52);
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'DM Sans', Arial, sans-serif;
+        }
+
+        /* =====================
+           RESET & BASE
+        ===================== */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            line-height: 1.6;
+            background: #f9f7f2;
+            color: var(--black);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* =====================
+           BOOTSTRAP-LIKE GRID
+           (already in provided CSS,
+           extras below)
+        ===================== */
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        [class*="col"] {
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 100%;
+        }
+
+        .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+        }
+
+        .col {
+            flex: 1 0 0%;
+        }
+
+        .col-4 {
+            flex: 0 0 auto;
+            width: 33.333333%;
+        }
+
+        .col-md-4 {
+            flex: 0 0 auto;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .col-md-4 {
+                width: 33.333333%;
+            }
+
+            .col-md-8 {
+                width: 66.666667%;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+
+        /* Flex utilities */
+        .d-flex {
+            display: flex !important;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .justify-content-between {
+            justify-content: space-between !important;
+        }
+
+        .justify-content-center {
+            justify-content: center !important;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-3 {
+            gap: 1rem;
+        }
+
+        .gap-4 {
+            gap: 1.5rem;
+        }
+
+        /* Text utilities */
+        .text-center {
+            text-align: center !important;
+        }
+
+        .text-white {
+            color: #fff !important;
+        }
+
+        .fw-bold {
+            font-weight: 700 !important;
+        }
+
+        /* Spacing utilities */
+        .mb-0 {
+            margin-bottom: 0 !important;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+        }
+
+        .mt-0 {
+            margin-top: 0 !important;
+        }
+
+        .mt-3 {
+            margin-top: 1rem !important;
+        }
+
+        .ms-auto {
+            margin-left: auto !important;
+        }
+
+        .me-auto {
+            margin-right: auto !important;
+        }
+
+        .w-100 {
+            width: 100% !important;
+        }
+
+        .h-100 {
+            height: 100% !important;
+        }
+
+        /* =====================
+           SECTION 1 — HERO
+        ===================== */
+        .section-1 {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Dark overlay on the hero image */
+        .section-1::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--overlay);
+            z-index: 0;
+        }
+
+        /* Everything inside the hero sits above the overlay */
+        .section-1>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ---- NAVBAR ---- */
+        .navbar {
+            padding: 22px 0;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        /* Logo icon – two overlapping arcs */
+        .brand-icon {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 36px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--nav-link);
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--green);
+        }
+
+        .btn-donate-outline {
+            display: inline-block;
+            padding: 9px 28px;
+            border: 2px solid var(--white);
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--white);
+            background: transparent;
+            cursor: pointer;
+            transition: background 0.25s, color 0.25s;
+            white-space: nowrap;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-donate-outline:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        /* ---- HERO CONTENT ---- */
+        .hero-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 15px 180px;
+        }
+
+        .hero-content .container {
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.4rem, 5.5vw, 4rem);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.18;
+            margin: 0 0 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.88);
+            max-width: 520px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+        }
+
+        .btn-donate-green {
+            display: inline-block;
+            padding: 14px 40px;
+            background: var(--green);
+            color: var(--white);
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: background 0.25s, transform 0.15s;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-donate-green:hover {
+            background: var(--green-dark);
+            transform: translateY(-2px);
+        }
+
+        /* =====================
+           SECTION 2 — INFO CARDS
+        ===================== */
+        .section-2 {
+            /* background: #f9f7f2; */
+            padding: 0 0 70px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Cards row floats up, overlapping the hero bottom */
+        .cards-row-wrapper {
+            margin-top: -110px;
+        }
+
+        .info-card {
+            background: var(--white);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 38px 36px 40px;
+            height: 100%;
+            transition: box-shadow 0.25s;
+        }
+
+        .info-card:hover {
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09);
+        }
+
+        /* Vertical dividers between cards on desktop */
+        .card-col:not(:last-child) .info-card {
+            border-right: none;
+            border-radius: 20px 0 0 20px;
+        }
+
+        .card-col:not(:first-child):not(:last-child) .info-card {
+            border-radius: 0;
+            border-left: 1px solid var(--card-border);
+        }
+
+        .card-col:last-child .info-card {
+            border-left: 1px solid var(--card-border);
+            border-radius: 0 20px 20px 0;
+        }
+
+        @media (max-width: 767px) {
+
+            .card-col .info-card,
+            .card-col:not(:last-child) .info-card,
+            .card-col:not(:first-child):not(:last-child) .info-card,
+            .card-col:last-child .info-card {
+                border-radius: 10px;
+                border: 1px solid var(--card-border);
+                margin-bottom: 16px;
+            }
+        }
+
+        .card-number {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 700;
+            color: #ccbfa8;
+            margin-bottom: 14px;
+            line-height: 1;
+            margin-top: 0;
+        }
+
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--black);
+            margin: 0 0 10px;
+            letter-spacing: -0.2px;
+        }
+
+        .card-text {
+            font-size: 0.92rem;
+            color: #777;
+            margin: 0 0 24px;
+            line-height: 1.65;
+        }
+
+        .card-link {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--black);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s, gap 0.2s;
+            border-bottom: 1.5px solid transparent;
+        }
+
+        .card-link:hover {
+            color: var(--green);
+            gap: 10px;
+        }
+
+        .card-link::after {
+            content: '→';
+            font-size: 1rem;
+        }
+
+
+
+        /* =====================
+           RESPONSIVE
+        ===================== */
+        @media (max-width: 767px) {
+
+            .navbar-nav,
+            .btn-donate-outline {
+                display: none;
+            }
+
+            .hero-content {
+                padding-bottom: 140px;
+            }
+
+            .cards-row-wrapper {
+                margin-top: -60px;
+            }
+
+            .col-md-4 {
+                width: 100%;
+            }
+
+        }
+
+
+        .proof-cards-container {
+            padding: 0 !important;
+        }
+
+        @media (max-width: 767px) {
+            .proof-cards-container {
+                padding: 10px 20px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+         SECTION 1 — HERO (Navbar + Hero Content)
+    ============================================================ -->
+    <section class="section-1">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Brand -->
+                    <div class="col-auto">
+                        <a href="#" class="navbar-brand">
+                            <!-- SVG Logo icon -->
+                            <svg class="brand-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13" cy="18" r="10" fill="none" stroke="white" stroke-width="2.5" />
+                                <circle cx="23" cy="18" r="10" fill="none" stroke="#7FC629" stroke-width="2.5" />
+                            </svg>
+                            Chanity
+                        </a>
+                    </div>
+
+                    <!-- Nav Links (center) -->
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <ul class="navbar-nav">
+                                <li><a href="#" class="nav-link active">Home</a></li>
+                                <li><a href="#" class="nav-link">About Us</a></li>
+                                <li><a href="#" class="nav-link">Our Work</a></li>
+                                <li><a href="#" class="nav-link">Stories</a></li>
+                                <li><a href="#" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Donate Button -->
+                    <div class="col-auto">
+                        <a href="#" class="btn-donate-outline">Donate</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+
+                        <h1 class="hero-title">
+                            Empowering Change, One<br>Step at a Time
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Every small act of kindness creates a ripple of positive change.<br>
+                            Join us in making a difference lives together.
+                        </p>
+
+                        <a href="#" class="btn-donate-green">Donate Now</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- END SECTION 1 -->
+
+
+    <!-- ============================================================
+         SECTION 2 — INFO CARDS (Causes, Get Involved, Donation)
+    ============================================================ -->
+    <section class="section-2">
+        <div class="container">
+            <div class="cards-row-wrapper">
+                <div class="row">
+
+                    <!-- Card 1: Causes -->
+                    <div class="col-md-4 col-12 card-col proof-cards-container">
+                        <div class="info-card">
+                            <p class="card-number">01.</p>
+                            <h3 class="card-title">Causes</h3>
+                            <p class="card-text">We support education, healthcare, and poverty reduction.</p>
+                            <a href="#" class="card-link">See Proof</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Get Involved -->
+                    <div class="col-md-4 col-12 card-col proof-cards-container">
+                        <div class="info-card">
+                            <p class="card-number">02.</p>
+                            <h3 class="card-title">Get Involved</h3>
+                            <p class="card-text">Volunteer or donate your skills to make a difference.</p>
+                            <a href="#" class="card-link">View Financials</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Donation -->
+                    <div class="col-md-4 col-12 card-col proof-cards-container">
+                        <div class="info-card">
+                            <p class="card-number">03.</p>
+                            <h3 class="card-title">Donation</h3>
+                            <p class="card-text">Contribute today and help us change lives and build a better future.
+                            </p>
+                            <a href="#" class="card-link">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 2 -->
+
+</body>
+
+</html>
