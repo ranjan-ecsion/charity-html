@@ -511,6 +511,636 @@
                 padding: 10px 20px !important;
             }
         }
+
+        /* =====================
+           GRID EXTENSION
+        ===================== */
+        .col-md-6 {
+            width: 100%;
+        }
+
+        .col-md-3 {
+            width: 100%;
+        }
+
+        .col-sm-6 {
+            width: 100%;
+        }
+
+        @media (min-width: 576px) {
+            .col-sm-6 {
+                width: 50%;
+                flex: 0 0 auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col-md-6 {
+                width: 50%;
+                flex: 0 0 auto;
+            }
+
+            .col-md-3 {
+                width: 25%;
+                flex: 0 0 auto;
+            }
+        }
+
+        /* =====================
+           SECTION 3 & 4 COMMON
+        ===================== */
+        .section-3,
+        .section-4 {
+            background: var(--white);
+            padding: 90px 0;
+            color: var(--black);
+        }
+
+        .section-tag {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--green);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .section-heading {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #1F3821;
+            /* forest green color */
+            line-height: 1.25;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .section-desc {
+            font-size: 0.95rem;
+            color: #555555;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Stats grid style */
+        .stats-row {
+            margin-top: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px 10px;
+            height: 100%;
+        }
+
+        .stat-number {
+            font-size: clamp(2rem, 3.5vw, 2.7rem);
+            font-weight: 700;
+            color: #1F3821;
+            /* Forest green */
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #555555;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Borders between stats on tablet/desktop */
+        @media (min-width: 768px) {
+            .stat-col:not(:last-child) .stat-item {
+                border-right: 1px solid #e8e4dc;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .stat-col:not(:last-child) .stat-item {
+                border-bottom: 1px solid #e8e4dc;
+                padding-bottom: 25px;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* =====================
+           SECTION 3 SPECIFIC
+        ===================== */
+        .section-header-row {
+            margin-bottom: 60px;
+        }
+
+        .impact-images-row {
+            margin-bottom: 30px;
+        }
+
+        .image-col {
+            margin-bottom: 30px;
+        }
+
+        .impact-img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .impact-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* =====================
+           SECTION 4 SPECIFIC
+        ===================== */
+        .section-4 {
+            border-top: 1px solid #f0edf7;
+            padding-bottom: 120px;
+        }
+
+        @media (min-width: 768px) {
+            .pt-md-4 {
+                padding-top: 2rem !important;
+            }
+        }
+
+        /* CTA Banner */
+        .cta-banner-wrapper {
+            margin-top: 70px;
+        }
+
+        .cta-banner {
+            background: #5BA615;
+            /* rich green */
+            padding: 40px 50px;
+            border-radius: 16px;
+            color: var(--white);
+            box-shadow: 0 12px 30px rgba(91, 166, 21, 0.2);
+        }
+
+        .cta-title {
+            font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .cta-desc {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+        }
+
+        .btn-donate-white {
+            display: inline-block;
+            padding: 12px 32px;
+            background: var(--white);
+            color: #5BA615;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: background 0.25s, transform 0.15s, color 0.25s;
+            text-align: center;
+        }
+
+        .btn-donate-white:hover {
+            background: #f4f4f4;
+            transform: translateY(-2px);
+            color: #4a890e;
+        }
+
+        @media (max-width: 767px) {
+            .cta-banner {
+                padding: 30px;
+            }
+
+            .text-md-end {
+                text-align: left !important;
+            }
+        }
+
+        /* =====================
+           SECTION 5 SPECIFIC
+        ===================== */
+        .section-5 {
+            background: #f9f7f2;
+            /* light warm cream/beige background matching body */
+            padding: 100px 0;
+            color: var(--black);
+        }
+
+        .vision-image-wrapper {
+            padding-right: 30px;
+        }
+
+        @media (max-width: 767px) {
+            .vision-image-wrapper {
+                padding-right: 0;
+            }
+        }
+
+        .vision-img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            object-fit: cover;
+            aspect-ratio: 1 / 1;
+        }
+
+        .vision-content {
+            padding-left: 20px;
+        }
+
+        @media (max-width: 767px) {
+            .vision-content {
+                padding-left: 0;
+            }
+        }
+
+        .vision-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .vision-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .vision-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--black);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .vision-text {
+            margin: 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+            color: #555555;
+        }
+
+        .vision-text strong {
+            color: var(--black);
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .section-5-wrapper {
+            margin-bottom: 200px;
+        }
+
+        @media (max-width: 767px) {
+            .section-5-wrapper {
+                margin-bottom: 40px;
+            }
+        }
+
+        /* =====================
+           SECTION 6 SPECIFIC
+        ===================== */
+        .section-6 {
+            background: #ffffff;
+            /* white background */
+            padding: 0 0 100px;
+            color: var(--black);
+            position: relative;
+        }
+
+        .video-container {
+            margin-top: -150px;
+            /* pull image up into Section 5 */
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .video-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+            aspect-ratio: 21 / 9;
+            /* widescreen banner aspect ratio */
+            cursor: pointer;
+        }
+
+        @media (max-width: 767px) {
+            .video-container {
+                margin-top: -80px;
+                /* smaller overlap on mobile */
+                margin-bottom: 40px;
+            }
+
+            .video-wrapper {
+                aspect-ratio: 16 / 9;
+                /* more standard video aspect ratio on mobile */
+            }
+        }
+
+        .video-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .video-wrapper:hover .video-img {
+            transform: scale(1.03);
+        }
+
+        /* Play Button in center of video banner */
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(127, 198, 41, 0.4);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            z-index: 2;
+        }
+
+        @media (max-width: 767px) {
+            .play-btn {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .video-wrapper:hover .play-btn {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: var(--green-dark);
+        }
+
+        .play-btn svg {
+            margin-left: 4px;
+            /* offset to center triangle */
+            fill: var(--white);
+        }
+
+        /* Centered CTA Content */
+        .cta-content-wrapper {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .cta-tag {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gray-text);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .cta-heading {
+            font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+            font-weight: 700;
+            color: #1F3821;
+            /* forest green */
+            line-height: 1.3;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-paragraph {
+            font-size: 0.95rem;
+            color: #666666;
+            line-height: 1.7;
+            margin: 0 0 35px;
+        }
+
+        /* Donate Today Button styling */
+        .btn-donate-primary {
+            display: inline-block;
+            padding: 14px 42px;
+            background: #5BA615;
+            /* rich green */
+            color: var(--white);
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: background 0.25s, transform 0.15s, box-shadow 0.25s;
+            box-shadow: 0 8px 20px rgba(91, 166, 21, 0.2);
+            text-align: center;
+        }
+
+        .btn-donate-primary:hover {
+            background: #4a890e;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(91, 166, 21, 0.3);
+        }
+
+        /* =====================
+           SECTION 7 SPECIFIC
+        ===================== */
+        .section-7 {
+            position: relative;
+            background: #ffffff;
+        }
+
+        /* Dark Banner Top */
+        .about-banner {
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 90px 0 160px;
+            /* high bottom padding so content below can overlap */
+            color: var(--white);
+        }
+
+        .about-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 10, 10, 0.7);
+            /* dark overlay */
+            z-index: 1;
+        }
+
+        .about-banner>* {
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-banner-title {
+            font-family: var(--font-body);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .about-banner-desc {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.7;
+            max-width: 500px;
+            margin: 0;
+        }
+
+        /* Light Bottom Content Area */
+        .about-content-area {
+            background: #f9f7f2;
+            /* light warm beige/cream background */
+            padding: 80px 0 120px;
+        }
+
+        .about-text-wrapper {
+            padding-right: 40px;
+        }
+
+        @media (max-width: 767px) {
+            .about-text-wrapper {
+                padding-right: 0;
+            }
+        }
+
+        /* Features with left border */
+        .about-features {
+            border-left: 2px solid #ccbfa8;
+            /* divider line */
+            padding-left: 24px;
+            margin-top: 35px;
+        }
+
+        .feature-item {
+            margin-bottom: 25px;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--black);
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+
+        .feature-text {
+            font-size: 0.9rem;
+            color: #666666;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* 4-Image Grid Masonry Overlap */
+        .about-grid-wrapper {
+            margin-top: -240px;
+            /* pull images up to overlap the dark banner */
+            position: relative;
+            z-index: 10;
+        }
+
+        @media (max-width: 767px) {
+            .about-grid-wrapper {
+                margin-top: -80px;
+                /* smaller overlap on mobile */
+            }
+        }
+
+        /* Custom columns display inside grid */
+        .about-grid-col-1 {
+            margin-top: 40px;
+            /* offset column 1 downwards */
+        }
+
+        .about-grid-col-2 {
+            margin-top: 0px;
+            /* offset column 2 upwards */
+        }
+
+        @media (max-width: 767px) {
+
+            .about-grid-col-1,
+            .about-grid-col-2 {
+                margin-top: 0;
+                /* remove offsets on mobile */
+            }
+        }
+
+        .about-grid-img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-grid-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .img-tall {
+            height: 290px;
+        }
+
+        .img-wide {
+            height: 190px;
+        }
+
+        @media (max-width: 767px) {
+            .img-tall {
+                height: 200px;
+            }
+
+            .img-wide {
+                height: 140px;
+            }
+        }
+
+        /* Utility grid gap class since bootstrap-like grid doesn't have spacing natively */
+        .g-3 {
+            margin-right: -8px;
+            margin-left: -8px;
+        }
+
+        .g-3>[class*="col"] {
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .col-6 {
+            width: 50%;
+            flex: 0 0 auto;
+        }
     </style>
 </head>
 
@@ -630,6 +1260,331 @@
         </div>
     </section>
     <!-- END SECTION 2 -->
+
+    <!-- ============================================================
+         SECTION 3 — OUR IMPACT (Vertical Images + Stats)
+    ============================================================ -->
+    <section class="section-3">
+        <div class="container">
+            <!-- Header Row -->
+            <div class="row section-header-row align-items-start">
+                <div class="col-md-4 col-12">
+                    <span class="section-tag">Our Impact</span>
+                </div>
+                <div class="col-md-8 col-12">
+                    <h2 class="section-heading">The impact we have made in our community</h2>
+                    <p class="section-desc">
+                        Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive
+                        to make a positive impact on the world. Give back to your community and be a part of something
+                        greater than yourself.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vertical Images Row -->
+            <div class="row impact-images-row">
+                <div class="col-md-4 col-12 image-col">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80"
+                        alt="Education and volunteer classroom" class="impact-img">
+                </div>
+                <div class="col-md-4 col-12 image-col">
+                    <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80"
+                        alt="Smiling children holding cups" class="impact-img">
+                </div>
+                <div class="col-md-4 col-12 image-col">
+                    <img src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?auto=format&fit=crop&w=600&q=80"
+                        alt="Children washing hands under clean water tap" class="impact-img">
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="row stats-row">
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">20M+</div>
+                        <p class="stat-label">People served worldwide</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">142,790</div>
+                        <p class="stat-label">Projects funded</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">1.8M</div>
+                        <p class="stat-label">People to take action</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">5,246</div>
+                        <p class="stat-label">Partner organizations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 3 -->
+
+    <!-- ============================================================
+         SECTION 4 — OUR IMPACT (Split Header + Stats + Banner)
+    ============================================================ -->
+    <section class="section-4">
+        <div class="container">
+            <!-- Header Row -->
+            <div class="row section-header-row align-items-start">
+                <div class="col-md-6 col-12">
+                    <span class="section-tag">Our Impact</span>
+                    <h2 class="section-heading">The impact we have made in our community</h2>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="section-desc pt-md-4">
+                        We have made a significant impact in our community through our non-profit organization. By
+                        providing services and support to those in need, we have created a positive change. Our efforts
+                        have helped to improve the lives of many and we are committed to continuing to make a
+                        difference.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="row stats-row">
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">20M+</div>
+                        <p class="stat-label">People served worldwide</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">142,790</div>
+                        <p class="stat-label">Projects funded</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">1.8M</div>
+                        <p class="stat-label">People to take action</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-col">
+                    <div class="stat-item">
+                        <div class="stat-number">5,246</div>
+                        <p class="stat-label">Partner organizations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Green Call to Action Banner -->
+            <div class="cta-banner-wrapper">
+                <div class="cta-banner">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 col-12">
+                            <h3 class="cta-title">We can create a better tomorrow</h3>
+                            <p class="cta-desc">Every dollar counts and helps us bring hope and essential resources to
+                                those in need.</p>
+                        </div>
+                        <div class="col-md-4 col-12 text-md-end text-start mt-md-0 mt-3">
+                            <a href="#" class="btn-donate-white">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 4 -->
+
+    <!-- ============================================================
+         SECTION 5 — VISION & MISSION (Image Left + Text Right)
+    ============================================================ -->
+    <section class="section-5">
+        <div class="container">
+            <div class="row align-items-center section-5-wrapper">
+                <!-- Left Image Column -->
+                <div class="col-md-6 col-12 mb-md-0 mb-4">
+                    <div class="vision-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=600&q=80"
+                            alt="Person holding donation box" class="vision-img">
+                    </div>
+                </div>
+
+                <!-- Right Text Column -->
+                <div class="col-md-6 col-12">
+                    <div class="vision-content">
+                        <h2 class="section-heading">Our Vision & Mission</h2>
+                        <p class="section-desc mb-4">
+                            Non-profit Organisation's vision is to create a world where all people have equal access to
+                            education and healthcare. Our mission is to provide the necessary resources and support to
+                            underprivileged communities to improve their quality of life.
+                        </p>
+
+                        <!-- Mission Bullet Items -->
+                        <ul class="vision-list">
+                            <li class="vision-item">
+                                <span class="check-icon">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white"
+                                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <p class="vision-text"><strong>Changing lives</strong> improving lives one step at a
+                                    time with our non-profit organization.</p>
+                            </li>
+                            <li class="vision-item">
+                                <span class="check-icon">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white"
+                                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <p class="vision-text"><strong>Building futures</strong> creating opportunities and a
+                                    better future with our non-profit organization.</p>
+                            </li>
+                            <li class="vision-item">
+                                <span class="check-icon">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white"
+                                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <p class="vision-text"><strong>Movement for change</strong> creating impact, promoting
+                                    change through non-profit work.</p>
+                            </li>
+                            <li class="vision-item">
+                                <span class="check-icon">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white"
+                                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <p class="vision-text"><strong>Lasting impact</strong> our charity strives for long-term
+                                    impact in communities we serve.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 5 -->
+
+    <!-- ============================================================
+         SECTION 6 — CONTRIBUTION CTA & VIDEO (Video Banner + Centered CTA)
+    ============================================================ -->
+    <section class="section-6">
+        <div class="container">
+            <!-- Video Overlay Banner -->
+            <div class="row justify-content-center">
+                <div class="col-12 video-container">
+                    <div class="video-wrapper">
+                        <!-- Play Button -->
+                        <div class="play-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80"
+                            alt="Volunteers packing food distribution boxes" class="video-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered CTA Text & Button -->
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <div class="cta-content-wrapper">
+                        <span class="cta-tag">Make a Difference Today</span>
+                        <h2 class="cta-heading">Your contribution matters. Support our cause by making a donation.</h2>
+                        <p class="cta-paragraph">
+                            Every dollar counts and helps us bring hope, joy, and essential resources to those in need.
+                            Together, we can create a better tomorrow.
+                        </p>
+                        <a href="#" class="btn-donate-primary">Donate Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 6 -->
+
+    <!-- ============================================================
+         SECTION 7 — ABOUT US & GALLERY (Banner + Two Columns)
+    ============================================================ -->
+    <section class="section-7">
+        <!-- Dark Top Banner -->
+        <div class="about-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <h1 class="about-banner-title">About Us</h1>
+                        <p class="about-banner-desc">
+                            Learn more about our non-profit organization and our mission to make a positive impact on
+                            the world through our charitable initiatives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Light Bottom Content Area -->
+        <div class="about-content-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Text Column -->
+                    <div class="col-md-6 col-12 mb-md-0 mb-5">
+                        <div class="about-text-wrapper">
+                            <h2 class="section-heading">Making the world a better place</h2>
+                            <p class="section-desc mb-4">
+                                Join Non-profit Organisation in our mission of making the world a better place. We
+                                strive to create positive change through various charitable initiatives and community
+                                outreach programs.
+                            </p>
+
+                            <!-- Vertical border list -->
+                            <div class="about-features">
+                                <div class="feature-item">
+                                    <h3 class="feature-title">Changing Lives</h3>
+                                    <p class="feature-text">Improving lives one step at a time with our non-profit
+                                        organization.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h3 class="feature-title">Building Futures</h3>
+                                    <p class="feature-text">Creating opportunities and a better future with our
+                                        non-profit organization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image Grid Column (overlapping top banner) -->
+                    <div class="col-md-6 col-12">
+                        <div class="about-grid-wrapper">
+                            <div class="row g-3">
+                                <!-- Left Column of Grid -->
+                                <div class="col-6 about-grid-col-1">
+                                    <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D923FF8D-E7A5-4CC5-835C-6B76EC3B28B4.webp"
+                                        alt="Hands holding a yellow flower" class="about-grid-img img-tall mb-3">
+                                    <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D923FF8D-E7A5-4CC5-835C-6B76EC3B28B4.webp"
+                                        alt="Donation box full of items" class="about-grid-img img-wide">
+                                </div>
+                                <!-- Right Column of Grid -->
+                                <div class="col-6 about-grid-col-2">
+                                    <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D923FF8D-E7A5-4CC5-835C-6B76EC3B28B4.webp"
+                                        alt="Volunteers packing food distribution boxes"
+                                        class="about-grid-img img-wide mb-3">
+                                    <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D923FF8D-E7A5-4CC5-835C-6B76EC3B28B4.webp"
+                                        alt="Volunteers distributing meals" class="about-grid-img img-tall">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 7 -->
 
 </body>
 
