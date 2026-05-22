@@ -1,0 +1,374 @@
+{
+  "navbar": {
+    "brand": {
+      "text": "Chanity"
+    },
+    "links": [
+      { "text": "Home", "link": "#", "active": true },
+      { "text": "About Us", "link": "#", "active": false },
+      { "text": "Our Work", "link": "#", "active": false },
+      { "text": "Stories", "link": "#", "active": false },
+      { "text": "Contact", "link": "#", "active": false }
+    ],
+    "cta": {
+      "text": "Donate",
+      "link": "#"
+    }
+  },
+  "hero": {
+    "title": "Empowering Change, One Step at a Time",
+    "subtitle": "Every small act of kindness creates a ripple of positive change. Join us in making a difference lives together.",
+    "cta": {
+      "text": "Donate Now",
+      "link": "#"
+    },
+    "background_image": "./assets/img/home-bg.webp"
+  },
+  "info_cards_section": [
+    {
+      "number": "01.",
+      "title": "Causes",
+      "description": "We support education, healthcare, and poverty reduction.",
+      "link": {
+        "text": "See Proof",
+        "url": "#"
+      }
+    },
+    {
+      "number": "02.",
+      "title": "Get Involved",
+      "description": "Volunteer or donate your skills to make a difference.",
+      "link": {
+        "text": "View Financials",
+        "url": "#"
+      }
+    },
+    {
+      "number": "03.",
+      "title": "Donation",
+      "description": "Contribute today and help us change lives and build a better future.",
+      "link": {
+        "text": "Learn More",
+        "url": "#"
+      }
+    }
+  ],
+  "our_impact_vertical_section": {
+    "eyebrow": "Our Impact",
+    "title": "The impact we have made in our community",
+    "description": "Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive to make a positive impact on the world. Give back to your community and be a part of something greater than yourself.",
+    "images": [
+      {
+        "url": "./assets/img/journey-1.webp",
+        "alt": "Education and volunteer classroom"
+      },
+      {
+        "url": "./assets/img/journey-2.webp",
+        "alt": "Smiling children holding cups"
+      },
+      {
+        "url": "./assets/img/journey-3.webp",
+        "alt": "Children washing hands under clean water tap"
+      }
+    ],
+    "stats": [
+      {
+        "number": "20M+",
+        "label": "People served worldwide"
+      },
+      {
+        "number": "142,790",
+        "label": "Projects funded"
+      },
+      {
+        "number": "1.8M",
+        "label": "People to take action"
+      },
+      {
+        "number": "5,246",
+        "label": "Partner organizations"
+      }
+    ]
+  },
+  "our_impact_cta_section": {
+    "eyebrow": "Our Impact",
+    "title": "The impact we have made in our community",
+    "description": "We have made a significant impact in our community through our non-profit organization. By providing services and support to those in need, we have created a positive change. Our efforts have helped to improve the lives of many and we are committed to continuing to make a difference.",
+    "stats": [
+      {
+        "number": "20M+",
+        "label": "People served worldwide"
+      },
+      {
+        "number": "142,790",
+        "label": "Projects funded"
+      },
+      {
+        "number": "1.8M",
+        "label": "People to take action"
+      },
+      {
+        "number": "5,246",
+        "label": "Partner organizations"
+      }
+    ],
+    "cta_banner": {
+      "title": "We can create a better tomorrow",
+      "description": "Every dollar counts and helps us bring hope and essential resources to those in need.",
+      "cta": {
+        "text": "Donate Now",
+        "link": "#"
+      }
+    }
+  },
+  "vision_mission_section": {
+    "title": "Our Vision & Mission",
+    "description": "Non-profit Organisation's vision is to create a world where all people have equal access to education and healthcare. Our mission is to provide the necessary resources and support to underprivileged communities to improve their quality of life.",
+    "image": {
+      "url": "./assets/img/movement.webp",
+      "alt": "Person holding donation box"
+    },
+    "points": [
+      {
+        "bold_text": "Changing lives",
+        "text": "improving lives one step at a time with our non-profit organization."
+      },
+      {
+        "bold_text": "Building futures",
+        "text": "creating opportunities and a better future with our non-profit organization."
+      },
+      {
+        "bold_text": "Movement for change",
+        "text": "creating impact, promoting change through non-profit work."
+      },
+      {
+        "bold_text": "Lasting impact",
+        "text": "our charity strives for long-term impact in communities we serve."
+      }
+    ]
+  },
+  "contribution_video_section": {
+    "video_poster": {
+      "url": "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Volunteers packing food distribution boxes"
+    },
+    "eyebrow": "Make a Difference Today",
+    "title": "Your contribution matters. Support our cause by making a donation.",
+    "description": "Every dollar counts and helps us bring hope, joy, and essential resources to those in need. Together, we can create a better tomorrow.",
+    "cta": {
+      "text": "Donate Today",
+      "link": "#"
+    }
+  },
+  "about_gallery_section": {
+    "banner": {
+      "title": "About Us",
+      "description": "Learn more about our non-profit organization and our mission to make a positive impact on the world through our charitable initiatives."
+    },
+    "content": {
+      "title": "Making the world a better place",
+      "description": "Join Non-profit Organisation in our mission of making the world a better place. We strive to create positive change through various charitable initiatives and community outreach programs.",
+      "features": [
+        {
+          "title": "Changing Lives",
+          "description": "Improving lives one step at a time with our non-profit organization."
+        },
+        {
+          "title": "Building Futures",
+          "description": "Creating opportunities and a better future with our non-profit organization."
+        }
+      ],
+      "gallery": [
+        {
+          "url": "./assets/img/journey-1.webp",
+          "alt": "Hands holding a yellow flower"
+        },
+        {
+          "url": "./assets/img/journey-2.webp",
+          "alt": "Donation box full of items"
+        },
+        {
+          "url": "./assets/img/journey-3.webp",
+          "alt": "Volunteers packing food distribution boxes"
+        },
+        {
+          "url": "./assets/img/card-1.webp",
+          "alt": "Volunteers distributing meals"
+        }
+      ]
+    }
+  },
+  "journey_collage_section": {
+    "eyebrow": "About Us",
+    "title": "Our journey of compassion and hope",
+    "description": "Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive to make a positive impact on the world. Give back to your community and be a part of something greater than yourself.",
+    "sub_description": "A transformational journey towards bringing hope and compassion to the world.",
+    "cta": {
+      "text": "Read More",
+      "link": "#"
+    },
+    "gallery": [
+      {
+        "url": "./assets/img/journey-1.webp",
+        "alt": "Hands holding a yellow flower"
+      },
+      {
+        "url": "./assets/img/journey-2.webp",
+        "alt": "Donation box full of items"
+      },
+      {
+        "url": "./assets/img/journey-3.webp",
+        "alt": "Volunteers packing food distribution boxes"
+      },
+      {
+        "url": "./assets/img/card-1.webp",
+        "alt": "Volunteers distributing meals"
+      }
+    ]
+  },
+  "contact_banner_section": {
+    "banner": {
+      "title": "Contact",
+      "description": "Connect with us for more information about our Non-profit Organisation and how you can contribute to our worthy causes."
+    },
+    "cards": {
+      "phone": {
+        "title": "PHONE",
+        "tel": "(555) 123-2222",
+        "fax": "(555) 123-2225"
+      },
+      "donation_center": {
+        "title": "DONATION CENTER",
+        "address_line_1": "PO Box 1234 Demotown,",
+        "address_line_2": "MD12345-5026"
+      },
+      "assistance": {
+        "title": "NEED ASSISTANCE?",
+        "link_text": "Check out our Help Center.",
+        "link_url": "#"
+      }
+    }
+  },
+  "inspiring_stories_section": {
+    "header": {
+      "title": "Inspiring tales of transformation",
+      "description": "Get inspired by the remarkable stories of transformation through our non-profit organization. Join us in making a positive impact today."
+    },
+    "cards": [
+      {
+        "image": "./assets/img/card-1.webp",
+        "title": "The Special One",
+        "description": "Join our non-profit organisation to help create a brighter future for those in need. Every donation counts towards making a difference in the lives of those less fortunate.",
+        "link": {
+          "text": "Read More",
+          "url": "#"
+        }
+      },
+      {
+        "image": "./assets/img/card-2.webp",
+        "title": "A Better Education for Everyone",
+        "description": "Our non-profit organisation is dedicated to improving access to education for all. With your support, we can help provide the resources and opportunities needed for success.",
+        "link": {
+          "text": "Read More",
+          "url": "#"
+        }
+      }
+    ]
+  },
+  "movement_join_section": {
+    "eyebrow": "GET INVOLVED",
+    "title": "Join our movement for change",
+    "paragraphs": [
+      "Join our non-profit organisation and be a part of our movement for positive change. We empower communities, support vulnerable individuals and strive towards building an equitable society. Together, we can create a better world. Join us now!",
+      "Become part of a transformative movement by supporting our non-profit organization. Together we can make lasting change."
+    ],
+    "image": {
+      "url": "./assets/img/movement.webp",
+      "alt": "Volunteers holding aid boxes"
+    },
+    "cta": {
+      "text": "Register Now",
+      "link": "#"
+    }
+  },
+  "where_we_work_section": {
+    "eyebrow": "WHERE WE WORK",
+    "title": "More than 70,000 staff in 120 countries, serving those in need. 99% of them are locals. All with your support.",
+    "map_iframe_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60962.458744140454!2d73.77393!3d18.5204303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+  },
+  "get_in_touch_section": {
+    "eyebrow": "GET IN TOUCH",
+    "title": "How can we help you?",
+    "intro_text": "Our Non-profit Organisation is dedicated to helping those in need. Contact us to see how we can help you or someone you know.",
+    "offices": [
+      {
+        "name": "Headquarter",
+        "address": "2715 Demo St. San Jose, South Dakota 83475",
+        "phone": "(205) 555-0100"
+      },
+      {
+        "name": "Illinois Office",
+        "address": "2972 Example Rd. Santa Ana, Illinois 85486",
+        "phone": "(603) 555-0123"
+      }
+    ],
+    "social_label": "Follow us on",
+    "socials": [
+      { "name": "facebook", "url": "#" },
+      { "name": "twitter", "url": "#" },
+      { "name": "instagram", "url": "#" },
+      { "name": "youtube", "url": "#" }
+    ]
+  },
+  "transformation_stories_cta_section": {
+    "cta_banner": {
+      "title": "We can create a better tomorrow",
+      "description": "Every dollar counts and helps us bring hope and essential resources to those in need.",
+      "cta": {
+        "text": "Donate Now",
+        "link": "#"
+      }
+    },
+    "heading": {
+      "title": "Inspiring tales of transformation",
+      "description": "Get inspired by the remarkable stories of transformation through our non-profit organization. Join us in making a positive impact today."
+    }
+  },
+  "footer_section": {
+    "brand": {
+      "text": "Chanity"
+    },
+    "description": "The power of giving: Support a cause and make a difference through charity.",
+    "about_us": {
+      "title": "About Us",
+      "links": [
+        { "text": "Our History", "url": "#" },
+        { "text": "What We Believe", "url": "#" },
+        { "text": "Our Programs", "url": "#" },
+        { "text": "Partners", "url": "#" }
+      ]
+    },
+    "ways_to_give": {
+      "title": "Ways To Give",
+      "links": [
+        { "text": "Fundraise", "url": "#" },
+        { "text": "Planned Giving", "url": "#" },
+        { "text": "Brand Partnership", "url": "#" },
+        { "text": "Legacy Giving", "url": "#" }
+      ]
+    },
+    "contact_info": {
+      "title": "Contact Info",
+      "address": "1234 Thornridge Cir. Syracuse, Connecticut 56789",
+      "phone": "(406) 555-0121",
+      "email": "mail@example.com"
+    },
+    "copyright": "© 2026 Non-Profit Organization. All rights reserved.",
+    "socials": [
+      { "name": "facebook", "url": "#" },
+      { "name": "twitter", "url": "#" },
+      { "name": "instagram", "url": "#" },
+      { "name": "youtube", "url": "#" }
+    ]
+  }
+}
