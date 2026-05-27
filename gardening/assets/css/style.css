@@ -1,0 +1,1449 @@
+   /* ============================================================
+       BOOTSTRAP-LIKE GRID & UTILITIES  (no CDN – hand-written)
+    ============================================================ */
+   *,
+   *::before,
+   *::after {
+     box-sizing: border-box;
+   }
+
+   /* ── Reset ── */
+   body {
+     margin: 0;
+     padding: 0;
+   }
+
+   img {
+     max-width: 100%;
+     display: block;
+   }
+
+   a {
+     text-decoration: none;
+   }
+
+   ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+   }
+
+   p,
+   h1,
+   h2,
+   h3,
+   h4 {
+     margin: 0;
+   }
+
+   /* ── Container ── */
+   .container {
+     width: 100%;
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-right: auto;
+     margin-left: auto;
+   }
+
+   @media (min-width: 576px) {
+     .container {
+       max-width: 540px;
+     }
+   }
+
+   @media (min-width: 768px) {
+     .container {
+       max-width: 720px;
+     }
+   }
+
+   @media (min-width: 992px) {
+     .container {
+       max-width: 960px;
+     }
+   }
+
+   @media (min-width: 1200px) {
+     .container {
+       max-width: 1140px;
+     }
+   }
+
+   @media (min-width: 1400px) {
+     .container {
+       max-width: 1320px;
+     }
+   }
+
+   /* ── Row ── */
+   .row {
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: -12px;
+     margin-left: -12px;
+   }
+
+   /* ── Base column ── */
+   [class*="col-"] {
+     padding-right: 12px;
+     padding-left: 12px;
+     width: 100%;
+   }
+
+   /* xs */
+   .col-12 {
+     width: 100%;
+   }
+
+   /* sm ≥ 576 */
+   @media (min-width: 576px) {
+     .col-sm-6 {
+       width: 50%;
+     }
+   }
+
+   /* md ≥ 768 */
+   @media (min-width: 768px) {
+     .col-md-4 {
+       width: 33.3333%;
+     }
+
+     .col-md-5 {
+       width: 41.6667%;
+     }
+
+     .col-md-6 {
+       width: 50%;
+     }
+
+     .col-md-7 {
+       width: 58.3333%;
+     }
+
+     .col-md-8 {
+       width: 66.6667%;
+     }
+   }
+
+   /* lg ≥ 992 */
+   @media (min-width: 992px) {
+     .col-lg-3 {
+       width: 25%;
+     }
+
+     .col-lg-4 {
+       width: 33.3333%;
+     }
+
+     .col-lg-5 {
+       width: 41.6667%;
+     }
+
+     .col-lg-6 {
+       width: 50%;
+     }
+
+     .col-lg-7 {
+       width: 58.3333%;
+     }
+
+     .col-lg-8 {
+       width: 66.6667%;
+     }
+   }
+
+   /* xl ≥ 1200 */
+   @media (min-width: 1200px) {
+     .col-xl-3 {
+       width: 25%;
+     }
+
+     .col-xl-6 {
+       width: 50%;
+     }
+   }
+
+   /* ── Gutters ── */
+
+   .gy-4 {
+     row-gap: 90px;
+   }
+
+   .gy-5 {
+     row-gap: 48px;
+   }
+
+   .gy-6 {
+     row-gap: 20px;
+   }
+
+   .g-4 {
+     gap: 24px;
+   }
+
+   /* ── Flex utilities ── */
+   .d-flex {
+     display: flex !important;
+   }
+
+   .align-items-center {
+     align-items: center !important;
+   }
+
+   .align-items-end {
+     align-items: flex-end !important;
+   }
+
+   .justify-content-center {
+     justify-content: center !important;
+   }
+
+   .justify-content-between {
+     justify-content: space-between !important;
+   }
+
+   .flex-column {
+     flex-direction: column !important;
+   }
+
+   .flex-wrap {
+     flex-wrap: wrap !important;
+   }
+
+   .gap-2 {
+     gap: 8px !important;
+   }
+
+   .gap-3 {
+     gap: 16px !important;
+   }
+
+   .gap-4 {
+     gap: 24px !important;
+   }
+
+   .ms-auto {
+     margin-left: auto !important;
+   }
+
+   .position-relative {
+     position: relative !important;
+   }
+
+   .position-absolute {
+     position: absolute !important;
+   }
+
+   /* ── Display responsive ── */
+   .d-none {
+     display: none !important;
+   }
+
+   @media (min-width: 768px) {
+     .d-md-inline-block {
+       display: inline-block !important;
+     }
+   }
+
+   @media (min-width: 992px) {
+     .d-lg-flex {
+       display: flex !important;
+     }
+
+     .d-lg-none {
+       display: none !important;
+     }
+   }
+
+   /* ── Text ── */
+   .text-center {
+     text-align: center !important;
+   }
+
+   .text-white {
+     color: #ffffff !important;
+   }
+
+   /* ── Spacing ── */
+   .mb-0 {
+     margin-bottom: 0 !important;
+   }
+
+   .mb-2 {
+     margin-bottom: 8px !important;
+   }
+
+   .mb-3 {
+     margin-bottom: 16px !important;
+   }
+
+   .mb-4 {
+     margin-bottom: 24px !important;
+   }
+
+   .mb-5 {
+     margin-bottom: 48px !important;
+   }
+
+   .mb-6 {
+     margin-bottom: 72px !important;
+   }
+
+   .mt-0 {
+     margin-top: 0 !important;
+   }
+
+   .mt-2 {
+     margin-top: 8px !important;
+   }
+
+   .mt-3 {
+     margin-top: 16px !important;
+   }
+
+   .mt-4 {
+     margin-top: 24px !important;
+   }
+
+   .mt-5 {
+     margin-top: 48px !important;
+   }
+
+   .pb-0 {
+     padding-bottom: 0 !important;
+   }
+
+   .pb-5 {
+     padding-bottom: 48px !important;
+   }
+
+   .pt-5 {
+     padding-top: 48px !important;
+   }
+
+   .px-0 {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+   }
+
+   /* ── w-100 ── */
+   .w-100 {
+     width: 100% !important;
+   }
+
+
+   /* ============================================================
+       DESIGN TOKENS
+    ============================================================ */
+   :root {
+     --green-dark: #1e3a2f;
+     --green-light-bg: #eef4ee;
+     --section-light: #f0f5f0;
+     --yellow: #e8c84a;
+     --yellow-hover: #d4b43a;
+     --text-dark: #1a2e25;
+     --text-muted: #6b7c6e;
+     --white: #ffffff;
+   }
+
+   /* ============================================================
+       GLOBAL BODY  –  20 px base font as requested
+    ============================================================ */
+   body {
+     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+     font-size: 20px;
+     /* ← 20 px body font */
+     line-height: 1.6;
+     color: var(--text-dark);
+     overflow-x: hidden;
+   }
+
+   /* Scale headings and small text relative to 20 px root */
+   h1 {
+     font-size: clamp(2.4rem, 5vw, 3.6rem);
+   }
+
+   h2 {
+     font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+   }
+
+   p {
+     font-size: 1rem;
+   }
+
+   /* 1rem = 20px */
+   small,
+   .text-sm {
+     font-size: 0.8rem;
+   }
+
+   /* ============================================================
+       SHARED COMPONENTS
+    ============================================================ */
+
+   /* Section label (leaf + CAPS text) */
+   .section-label {
+     display: flex;
+     align-items: center;
+     gap: 7px;
+     font-size: 18px;
+     font-weight: 700;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     color: var(--text-muted);
+     margin-bottom: 14px;
+   }
+
+   .section-label i {
+     color: var(--green-dark);
+     font-size: 0.78rem;
+   }
+
+   /* Pill buttons */
+   .btn-yellow {
+     background: var(--yellow);
+     color: var(--text-dark);
+     border: none;
+     border-radius: 50px;
+     padding: 14px 34px;
+     font-weight: 700;
+     font-size: 0.9rem;
+     cursor: pointer;
+     transition: background 0.2s;
+     display: inline-block;
+   }
+
+   .btn-yellow:hover {
+     background: var(--yellow-hover);
+     color: var(--text-dark);
+   }
+
+   .btn-outline-dark {
+     border: 2px solid var(--text-dark);
+     border-radius: 50px;
+     background: transparent;
+     color: var(--text-dark);
+     padding: 10px 34px;
+     font-weight: 700;
+     font-size: 18px;
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     transition: all 0.2s;
+   }
+
+   .btn-outline-dark:hover {
+     background: var(--text-dark);
+     color: var(--white);
+   }
+
+   .btn-outline-white {
+     border: 2px solid rgba(255, 255, 255, 0.7);
+     border-radius: 50px;
+     background: transparent;
+     color: var(--white);
+     padding: 13px 32px;
+     font-weight: 600;
+     font-size: 0.97rem;
+     display: inline-block;
+     transition: all 0.2s;
+   }
+
+   .btn-outline-white:hover {
+     border-color: var(--white);
+     background: rgba(255, 255, 255, 0.1);
+     color: var(--white);
+   }
+
+   /* Yellow circle check icon  */
+   .check-icon {
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     background: var(--yellow);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     flex-shrink: 0;
+   }
+
+   .check-icon i {
+     font-size: 0.62rem;
+     color: var(--text-dark);
+   }
+
+   /* ============================================================
+       NAVBAR
+    ============================================================ */
+   .site-navbar {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 200;
+     padding: 20px 0;
+   }
+
+   .site-navbar .container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+
+   .navbar-brand {
+     color: var(--white);
+     font-weight: 700;
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+   }
+
+   .navbar-brand i {
+     font-size: 20px;
+   }
+
+   .navbar-nav {
+     display: flex;
+     align-items: center;
+     gap: 4px;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+
+   .navbar-nav .nav-link {
+     color: rgba(255, 255, 255, 0.9);
+     font-size: 0.93rem;
+     padding: 6px 14px;
+     font-weight: 400;
+     transition: color 0.15s;
+   }
+
+   .navbar-nav .nav-link:hover {
+     color: var(--white);
+   }
+
+   /* Hide nav on mobile */
+   @media (max-width: 991px) {
+     .navbar-nav {
+       display: none;
+     }
+
+     .navbar-btn-wrap {
+       display: none;
+     }
+   }
+
+   /* Mobile Toggle Button */
+   .mobile-toggle {
+     display: none;
+     background: none;
+     border: none;
+     color: var(--white);
+     font-size: 24px;
+     cursor: pointer;
+   }
+
+   /* Mobile */
+   @media (max-width: 991px) {
+
+     .mobile-toggle {
+       display: block;
+     }
+
+     .site-navbar .container {
+       position: relative;
+     }
+
+     .navbar-nav {
+       position: absolute;
+       top: 120%;
+       left: 0;
+       width: 100%;
+       background: #111;
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 0;
+       padding: 15px;
+       border-radius: 12px;
+     }
+
+     .navbar-nav.active {
+       display: flex;
+     }
+
+     .navbar-nav .nav-link {
+       display: block;
+       width: 100%;
+       padding: 12px 0;
+     }
+
+   }
+
+   /* ============================================================
+       SECTION 1 – HERO
+    ============================================================ */
+   .section-1 {
+     position: relative;
+     min-height: 100vh;
+     background: url('./assets/img/hero-bg.webp') center / cover no-repeat;
+     display: flex;
+     align-items: center;
+   }
+
+   .section-1::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     background: rgba(16, 35, 24, 0.14);
+   }
+
+   .section-1>.container {
+     position: relative;
+     z-index: 2;
+   }
+
+   .hero-title {
+     font-size: clamp(2.2rem, 5vw, 3.9rem);
+     font-weight: 800;
+     color: var(--white);
+     line-height: 1.14;
+     margin-bottom: 18px;
+     max-width: 660px;
+   }
+
+   .hero-subtitle {
+     color: rgba(255, 255, 255, 0.82);
+     font-size: 20px;
+     margin-bottom: 36px;
+     max-width: 440px;
+   }
+
+   .hero-cta-wrap {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 14px;
+   }
+
+   /* ============================================================
+       SECTION 2 – VALUE PROPS
+    ============================================================ */
+   .section-2 {
+     background: var(--green-light-bg);
+     padding: 72px 0;
+   }
+
+   .value-icon-wrap {
+     width: 58px;
+     height: 58px;
+     border-radius: 50%;
+     background: var(--green-dark);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 18px;
+   }
+
+   .value-icon-wrap i {
+     color: var(--white);
+     font-size: 1.25rem;
+   }
+
+   .value-title {
+     font-size: 22px;
+     font-weight: 700;
+     color: var(--text-dark);
+     margin-bottom: 8px;
+   }
+
+   .value-desc {
+     font-size: 18px;
+     color: var(--text-muted);
+     line-height: 1.65;
+   }
+
+   /* ============================================================
+       SECTION 3 – ABOUT US
+    ============================================================ */
+   .section-3 {
+     background: var(--white);
+     padding: 92px 0;
+   }
+
+   .about-img-stack {
+     position: relative;
+     height: 510px;
+   }
+
+   .about-img-top {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 72%;
+     height: 360px;
+     object-fit: cover;
+     border-radius: 18px;
+   }
+
+   .about-img-bottom {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: 65%;
+     height: 320px;
+     object-fit: cover;
+     border-radius: 18px;
+     border: 6px solid var(--white);
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+   }
+
+   .about-title {
+     font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+     font-weight: 800;
+     color: var(--text-dark);
+     line-height: 1.2;
+     margin-bottom: 20px;
+   }
+
+   .about-desc {
+     font-size: 18px;
+     color: var(--text-muted);
+     line-height: 1.78;
+     margin-bottom: 28px;
+   }
+
+   .check-list {
+     margin-bottom: 36px;
+   }
+
+   .check-list li {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     font-weight: 600;
+     font-size: 20px;
+     color: var(--text-dark);
+     margin-bottom: 10px;
+   }
+
+   .check-list li .check-icon {
+     width: 22px;
+     height: 22px;
+     border-radius: 50%;
+     background: var(--yellow);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-shrink: 0;
+   }
+
+   .check-list li .check-icon i {
+     font-size: 0.65rem;
+     color: var(--text-dark);
+   }
+
+   /* ============================================================
+       SECTION 4 – SERVICES
+    ============================================================ */
+   .section-4 {
+     background: var(--section-light);
+     padding: 92px 0;
+   }
+
+   .services-head {
+     margin-bottom: 56px;
+   }
+
+   .services-title {
+     font-size: clamp(1.8rem, 3vw, 2.7rem);
+     font-weight: 800;
+     color: var(--text-dark);
+     line-height: 1.2;
+     max-width: 660px;
+     margin: 0 auto;
+   }
+
+   .service-card {
+     background: var(--white);
+     border-radius: 18px;
+     padding: 20px;
+     overflow: hidden;
+     height: 100%;
+   }
+
+   .service-card-icon {
+     font-size: 1.75rem;
+     color: var(--text-dark);
+     margin-bottom: 14px;
+   }
+
+   .service-card-title {
+     font-size: 24px;
+     font-weight: 500;
+     color: var(--text-dark);
+     line-height: 1.3;
+     margin-bottom: 8px;
+   }
+
+   .service-card-desc {
+     font-size: 18px;
+     color: var(--text-muted);
+     margin-bottom: 18px;
+     line-height: 1.5;
+   }
+
+   .service-card-img {
+     width: calc(100% + 48px);
+     /* margin-left: -24px; */
+     height: 150px;
+     object-fit: cover;
+     /* margin-bottom: 10px; */
+     border-radius: 18px;
+   }
+
+   /* ============================================================
+       SECTION 5 – WHY US
+    ============================================================ */
+   .section-5 {
+     background: var(--green-dark);
+   }
+
+   .section-5-inner {
+     display: flex;
+     min-height: 580px;
+   }
+
+   .why-content {
+     width: 50%;
+     padding: 80px 64px 80px 80px;
+   }
+
+   .why-image {
+     width: 50%;
+     /* background: url('./assets/img/why-choose-us.webp') center / cover no-repeat; */
+     padding: 50px;
+   }
+
+   .why-image img {
+     max-width: 100%;
+     display: block;
+     height: 700px;
+     margin: 0 auto;
+     border-radius: 18px;
+   }
+
+   @media (max-width: 991px) {
+     .section-5-inner {
+       flex-direction: column;
+     }
+
+     .why-content {
+       width: 100%;
+       padding: 60px 28px;
+     }
+
+     .why-image {
+       width: 100%;
+       min-height: 340px;
+       padding: 0 20px 50px;
+     }
+
+     .why-image img {
+       height: auto;
+     }
+   }
+
+   .why-label i {
+     color: rgba(255, 255, 255, 0.45);
+   }
+
+   .why-label {
+     color: rgba(255, 255, 255, 0.5);
+   }
+
+   .why-title {
+     font-size: clamp(1.9rem, 3vw, 2.7rem);
+     font-weight: 800;
+     color: var(--white);
+     line-height: 1.2;
+     margin-bottom: 44px;
+   }
+
+   .why-item {
+     padding: 26px 0;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+   }
+
+   .why-item:first-of-type {
+     padding-top: 0;
+   }
+
+   .why-item:last-of-type {
+     border-bottom: none;
+     padding-bottom: 0;
+   }
+
+   .why-asterisk {
+     color: var(--yellow);
+     font-size: 40px;
+     font-weight: 900;
+     display: block;
+     margin-bottom: 6px;
+   }
+
+   .why-item-title {
+     font-size: 22px;
+     font-weight: 700;
+     color: var(--white);
+     margin-bottom: 6px;
+   }
+
+   .why-item-desc {
+     font-size: 20px;
+     color: rgba(255, 255, 255, 0.58);
+     line-height: 1.65;
+   }
+
+   /* ============================================================
+       SECTION 6 – TESTIMONIALS
+    ============================================================ */
+   .section-6 {
+     background: var(--white);
+     padding: 92px 0;
+   }
+
+   .testimonials-title {
+     font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+     font-weight: 800;
+     color: var(--text-dark);
+     line-height: 1.25;
+     margin-top: 6px;
+   }
+
+   .review-card {
+     background: var(--green-light-bg);
+     border-radius: 18px;
+     padding: 36px 34px 30px;
+     height: 100%;
+   }
+
+   .reviewer-avatar {
+     width: 66px;
+     height: 66px;
+     border-radius: 50%;
+     object-fit: cover;
+     flex-shrink: 0;
+   }
+
+   .reviewer-name {
+     font-size: 1.02rem;
+     font-weight: 700;
+     color: var(--text-dark);
+   }
+
+   .reviewer-location {
+     font-size: 0.85rem;
+     color: var(--text-muted);
+   }
+
+   .review-text {
+     font-size: 0.93rem;
+     color: var(--text-muted);
+     line-height: 1.72;
+     margin-top: 20px;
+     margin-bottom: 0;
+   }
+
+   .review-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 24px;
+   }
+
+   .review-stars i {
+     color: #e8a020;
+     font-size: 1.05rem;
+   }
+
+   .google-g {
+     font-size: 2rem;
+     font-weight: 900;
+     color: var(--text-dark);
+     opacity: 0.72;
+     line-height: 1;
+     font-family: Arial, sans-serif;
+   }
+
+   /* ============================================================
+       SECTION 7 – OUR PROJECTS
+    ============================================================ */
+   .section-7 {
+     background: var(--section-light);
+     padding: 92px 0;
+   }
+
+   .projects-title {
+     font-size: clamp(1.8rem, 3vw, 2.6rem);
+     font-weight: 800;
+     color: var(--text-dark);
+     margin-top: 6px;
+   }
+
+   .project-card {
+     border-radius: 18px;
+     overflow: hidden;
+     position: relative;
+   }
+
+   .project-card img {
+     width: 100%;
+     height: 290px;
+     object-fit: cover;
+     display: block;
+     transition: transform 0.4s ease;
+   }
+
+   .project-card:hover img {
+     transform: scale(1.04);
+   }
+
+   .project-overlay {
+     position: absolute;
+     inset: 0;
+     background: rgba(16, 36, 24, 0.44);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .project-overlay p {
+     color: var(--white);
+     font-size: 20px;
+     font-weight: 600;
+     text-align: center;
+     padding: 0 20px;
+   }
+
+   /* ============================================================
+       SECTION 8 – CTA BANNER
+    ============================================================ */
+   .section-8 {
+     position: relative;
+     background: url('./assets/img/footer-bg.webp') center / cover no-repeat;
+     padding: 88px 0;
+     overflow: hidden;
+   }
+
+   .section-8::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     background: rgba(10, 24, 15, 0.64);
+   }
+
+   .section-8>.container {
+     position: relative;
+     z-index: 2;
+   }
+
+   .cta-title {
+     font-size: clamp(1.7rem, 3.5vw, 2.65rem);
+     font-weight: 800;
+     color: var(--white);
+     line-height: 1.25;
+     margin-bottom: 14px;
+   }
+
+   .cta-subtitle {
+     font-size: 0.97rem;
+     color: rgba(255, 255, 255, 0.75);
+     margin-bottom: 30px;
+     max-width: 500px;
+   }
+
+   /* ============================================================
+       SECTION 9 – FOOTER
+    ============================================================ */
+   .section-9 {
+     background: var(--green-light-bg);
+     padding-top: 72px;
+   }
+
+   .footer-brand-wrap {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     font-size: 1.15rem;
+     font-weight: 700;
+     color: var(--text-dark);
+     margin-bottom: 14px;
+   }
+
+   .footer-tagline {
+     font-size: 18px;
+     color: var(--text-muted);
+     line-height: 1.68;
+     max-width: 250px;
+   }
+
+   .footer-col-title {
+     font-size: 20px;
+     font-weight: 700;
+     color: var(--text-dark);
+     margin-bottom: 18px;
+     padding-left: 0;
+   }
+
+   .footer-links li {
+     margin-bottom: 10px;
+   }
+
+   .footer-links a {
+     font-size: 18px;
+     color: var(--text-muted);
+     transition: color 0.15s;
+   }
+
+   .footer-links a:hover {
+     color: var(--text-dark);
+   }
+
+   .footer-address {
+     font-size: 18px;
+     color: var(--text-muted);
+     line-height: 1.7;
+     margin-bottom: 14px;
+   }
+
+   .footer-phone {
+     font-size: 18px;
+     color: var(--text-muted);
+   }
+
+   .footer-phone strong {
+     color: var(--text-dark);
+   }
+
+   .footer-bottom {
+     border-top: 1px solid rgba(0, 0, 0, 0.08);
+     padding: 22px 0;
+     margin-top: 32px;
+   }
+
+   .footer-copy {
+     font-size: 18px;
+     color: var(--text-muted);
+     text-align: center;
+     margin: 0;
+   }
+
+   /* ============================================================
+       RESPONSIVE TWEAKS
+    ============================================================ */
+   @media (max-width: 991px) {
+     .about-img-stack {
+       height: 340px;
+       margin-bottom: 40px;
+     }
+
+     .about-img-top {
+       height: 240px;
+     }
+
+     .about-img-bottom {
+       height: 200px;
+     }
+   }
+
+   @media (max-width: 767px) {
+     .hero-title {
+       font-size: 2rem;
+     }
+
+     .service-card {
+       margin-bottom: 20px;
+     }
+
+     .project-card img {
+       height: 220px;
+     }
+
+     .review-card {
+       padding: 24px 20px;
+     }
+
+     .why-content {
+       padding: 50px 20px;
+     }
+   }
+
+
+   /* ============================================================
+       SECTION 10 – SERVICES HERO BANNER
+    ============================================================ */
+   .section-10 {
+     position: relative;
+     min-height: 480px;
+     background:
+       url('./assets/img/services-hero-bg.webp') center / cover no-repeat;
+     display: flex;
+     align-items: center;
+   }
+
+   /* Dark overlay */
+   .section-10::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     background: rgba(14, 30, 20, 0.58);
+   }
+
+   .section-10>.container {
+     position: relative;
+     z-index: 2;
+     padding-top: 120px;
+     /* push content below navbar */
+     padding-bottom: 60px;
+   }
+
+   /* Hero heading  */
+   .services-hero-title {
+     font-size: clamp(2.6rem, 6vw, 4.2rem);
+     font-weight: 800;
+     color: var(--white);
+     line-height: 1.1;
+     margin-bottom: 18px;
+   }
+
+   /* Hero sub-text */
+   .services-hero-sub {
+     color: rgba(255, 255, 255, 0.82);
+     font-size: 20px;
+     max-width: 480px;
+     line-height: 1.65;
+   }
+
+
+   /* ============================================================
+       SECTION 11 – FULL RANGE OF SERVICES  (cards)
+    ============================================================ */
+   .section-11 {
+     background: var(--section-light);
+     padding: 92px 0 100px;
+   }
+
+   /* Section heading block */
+   .services-range-label {
+     justify-content: center;
+   }
+
+   .services-range-title {
+     font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+     font-weight: 800;
+     color: var(--text-dark);
+     line-height: 1.18;
+     margin-bottom: 18px;
+   }
+
+   .services-range-desc {
+     font-size: 18px;
+     color: var(--text-muted);
+     max-width: 660px;
+     margin: 0 auto;
+     line-height: 1.7;
+   }
+
+   /* Individual service card */
+   .svc-card {
+     background: var(--white);
+     border-radius: 20px;
+     overflow: visible;
+     height: 100%;
+   }
+
+   /* Top image */
+   .svc-card-img {
+     width: 90%;
+     height: 310px;
+     object-fit: cover;
+     display: block;
+     border-radius: 18px;
+     position: relative;
+     top: -35px;
+     margin: 0 auto;
+   }
+
+   /* Bottom content area */
+   .svc-card-body {
+     padding: 0px 30px 36px;
+   }
+
+   .svc-card-icon {
+     font-size: 1.6rem;
+     color: var(--text-dark);
+     margin-bottom: 14px;
+     display: block;
+   }
+
+   /* SVG-style line-art icons via pseudo char fallback */
+   .svc-card-icon-img {
+     width: 46px;
+     height: 46px;
+     margin-bottom: 14px;
+     opacity: 0.75;
+   }
+
+   .svc-card-title {
+     font-size: 20px;
+     font-weight: 500;
+     color: var(--text-dark);
+     margin-bottom: 12px;
+     line-height: 1.25;
+   }
+
+   .svc-card-desc {
+     font-size: 18px;
+     color: var(--text-muted);
+     line-height: 1.72;
+   }
+
+
+   /* ============================================================
+       SECTION 12 – LEGACY / DECADES OF EXCELLENCE
+    ============================================================ */
+   .section-12 {
+     background: var(--white);
+     padding: 92px 0;
+   }
+
+   /* ── Left: Image + badge ── */
+   .legacy-img-wrap {
+     position: relative;
+     display: inline-block;
+     width: 100%;
+   }
+
+   .legacy-main-img {
+     width: 100%;
+     max-width: 450px;
+     height: 440px;
+     object-fit: cover;
+     border-radius: 20px;
+     display: block;
+   }
+
+   /* Dark badge (25+ years) */
+   .legacy-badge {
+     position: absolute;
+     bottom: -55px;
+     right: 10px;
+     background: var(--green-dark);
+     color: var(--white);
+     border-radius: 16px;
+     padding: 28px 36px 24px;
+     text-align: center;
+     min-width: 200px;
+   }
+
+   .legacy-badge-number {
+     font-size: clamp(2.6rem, 5vw, 3.4rem);
+     font-weight: 800;
+     line-height: 1;
+     display: block;
+     margin-bottom: 8px;
+   }
+
+   .legacy-badge-label {
+     font-size: 20px;
+     color: rgba(255, 255, 255, 0.75);
+     line-height: 1.4;
+   }
+
+   /* ── Right: content ── */
+
+
+   .legacy-title {
+     font-size: clamp(2rem, 3.5vw, 2.9rem);
+     font-weight: 800;
+     color: var(--text-dark);
+     line-height: 1.2;
+     margin-bottom: 22px;
+   }
+
+   .legacy-desc {
+     font-size: 20px;
+     color: var(--text-muted);
+     line-height: 1.78;
+     margin-bottom: 30px;
+   }
+
+   /* Check list for this section */
+   .legacy-check-list {
+     margin-bottom: 36px;
+   }
+
+   .legacy-check-list li {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     font-weight: 600;
+     font-size: 20px;
+     color: var(--text-dark);
+     margin-bottom: 12px;
+   }
+
+
+   /* ============================================================
+       RESPONSIVE OVERRIDES
+    ============================================================ */
+   @media (max-width: 991px) {
+     .section-10>.container {
+       padding-top: 100px;
+       padding-bottom: 48px;
+     }
+
+     .legacy-main-img {
+       height: 340px;
+       max-width: 100%;
+     }
+
+     .legacy-badge {
+       right: 0;
+       min-width: 170px;
+       padding: 22px 26px 18px;
+     }
+
+     .legacy-img-wrap {
+       margin-bottom: 60px;
+     }
+   }
+
+   @media (max-width: 767px) {
+     .services-hero-title {
+       font-size: 2.2rem;
+     }
+
+     .svc-card-img {
+       height: 220px;
+     }
+
+     .svc-card-body {
+       padding: 22px 20px 28px;
+     }
+
+     .legacy-badge {
+       position: relative;
+       bottom: auto;
+       right: auto;
+       border-radius: 16px;
+       margin-top: 20px;
+       display: inline-block;
+       width: auto;
+     }
+
+     .legacy-img-wrap {
+       margin-bottom: 40px;
+     }
+   }

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{navbar.brand.text}}</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════
+     NAVBAR  (floats over hero)
+ ════════════════════════════════════════════ -->
+  <nav class="site-navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <i class="{{navbar.brand.icon}}"></i> {{navbar.brand.text}}
+      </a>
+
+      <!-- Add after navbar-brand -->
+      <button class="mobile-toggle" id="mobileToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-nav">
+        <li><a href="{{navbar.links[0].link}}" class="nav-link">{{navbar.links[0].text}}</a></li>
+        <li><a href="{{navbar.links[1].link}}" class="nav-link">{{navbar.links[1].text}}</a></li>
+        <li><a href="{{navbar.links[2].link}}" class="nav-link">{{navbar.links[2].text}}</a></li>
+        <li><a href="{{navbar.links[3].link}}" class="nav-link">{{navbar.links[3].text}}</a></li>
+        <li><a href="{{navbar.links[4].link}}" class="nav-link">{{navbar.links[4].text}}</a></li>
+      </ul>
+      <div class="navbar-btn-wrap">
+        <a href="{{navbar.cta.link}}" class="btn-yellow">{{navbar.cta.text}}</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 1 – HERO
+ ════════════════════════════════════════════ -->
+  <section class="section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h1 class="hero-title">{{hero_section.title}}</h1>
+          <p class="hero-subtitle">{{hero_section.subtitle}}</p>
+          <div class="hero-cta-wrap">
+            <a href="{{hero_section.cta_primary.link}}" class="btn-yellow">{{hero_section.cta_primary.text}}</a>
+            <a href="{{hero_section.cta_secondary.link}}" class="btn-outline-white">{{hero_section.cta_secondary.text}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 2 – VALUE PROPS
+ ════════════════════════════════════════════ -->
+  <section class="section-2">
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-6 col-lg-3">
+          <div class="value-icon-wrap">
+            <i class="{{value_props_section[0].icon}}"></i>
+          </div>
+          <p class="value-title">{{value_props_section[0].title}}</p>
+          <p class="value-desc">{{value_props_section[0].description}}</p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="value-icon-wrap">
+            <i class="{{value_props_section[1].icon}}"></i>
+          </div>
+          <p class="value-title">{{value_props_section[1].title}}</p>
+          <p class="value-desc">{{value_props_section[1].description}}</p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="value-icon-wrap">
+            <i class="{{value_props_section[2].icon}}"></i>
+          </div>
+          <p class="value-title">{{value_props_section[2].title}}</p>
+          <p class="value-desc">{{value_props_section[2].description}}</p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="value-icon-wrap">
+            <i class="{{value_props_section[3].icon}}"></i>
+          </div>
+          <p class="value-title">{{value_props_section[3].title}}</p>
+          <p class="value-desc">{{value_props_section[3].description}}</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 3 – ABOUT US
+ ════════════════════════════════════════════ -->
+  <section class="section-3">
+    <div class="container">
+      <div class="row gy-5 align-items-center">
+
+        <!-- Image Stack -->
+        <div class="col-12 col-lg-6">
+          <div class="about-img-stack">
+            <img src="{{about_section.images[0].url}}" alt="{{about_section.images[0].alt}}" class="about-img-top" />
+            <img src="{{about_section.images[1].url}}" alt="{{about_section.images[1].alt}}" class="about-img-bottom" />
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="col-12 col-lg-6">
+          <p class="section-label"><i class="fa-solid fa-leaf"></i> {{about_section.eyebrow}}</p>
+          <h2 class="about-title">{{about_section.title}}</h2>
+          <p class="about-desc">
+            {{about_section.description}}
+          </p>
+          <ul class="check-list">
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              {{about_section.checklist[0]}}
+            </li>
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              {{about_section.checklist[1]}}
+            </li>
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              {{about_section.checklist[2]}}
+            </li>
+          </ul>
+          <a href="{{about_section.cta.link}}" class="btn-outline-dark">{{about_section.cta.text}} <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 4 – OUR SERVICES
+ ════════════════════════════════════════════ -->
+  <section class="section-4">
+    <div class="container">
+
+      <div class="services-head text-center">
+        <p class="section-label justify-content-center"><i class="fa-solid fa-leaf"></i> {{services_section.eyebrow}}</p>
+        <h2 class="services-title">{{services_section.title}}</h2>
+      </div>
+
+      <div class="row gy-6">
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="service-card-icon"><i class="{{services_section.cards[0].icon}}"></i></div>
+            <p class="service-card-title">{{services_section.cards[0].title}}</p>
+            <p class="service-card-desc">{{services_section.cards[0].description}}</p>
+            <img src="{{services_section.cards[0].image.url}}" alt="{{services_section.cards[0].image.alt}}" class="service-card-img" />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="service-card-icon"><i class="{{services_section.cards[1].icon}}"></i></div>
+            <p class="service-card-title">{{services_section.cards[1].title}}</p>
+            <p class="service-card-desc">{{services_section.cards[1].description}}</p>
+            <img src="{{services_section.cards[1].image.url}}" alt="{{services_section.cards[1].image.alt}}" class="service-card-img" />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="service-card-icon"><i class="{{services_section.cards[2].icon}}"></i></div>
+            <p class="service-card-title">{{services_section.cards[2].title}}</p>
+            <p class="service-card-desc">{{services_section.cards[2].description}}</p>
+            <img src="{{services_section.cards[2].image.url}}" alt="{{services_section.cards[2].image.alt}}" class="service-card-img" />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="service-card-icon"><i class="{{services_section.cards[3].icon}}"></i></div>
+            <p class="service-card-title">{{services_section.cards[3].title}}</p>
+            <p class="service-card-desc">{{services_section.cards[3].description}}</p>
+            <img src="{{services_section.cards[3].image.url}}" alt="{{services_section.cards[3].image.alt}}" class="service-card-img" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="{{services_section.cta.link}}" class="btn-outline-dark">{{services_section.cta.text}} <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 5 – WHY US
+ ════════════════════════════════════════════ -->
+  <section class="section-5">
+    <div class="section-5-inner">
+
+      <!-- Text -->
+      <div class="why-content">
+        <p class="section-label why-label"><i class="fa-solid fa-leaf"></i> {{why_us_section.eyebrow}}</p>
+        <h2 class="why-title">{{why_us_section.title}}</h2>
+
+        <div class="why-item">
+          <span class="why-asterisk">✳</span>
+          <p class="why-item-title">{{why_us_section.items[0].title}}</p>
+          <p class="why-item-desc">{{why_us_section.items[0].description}}</p>
+        </div>
+
+        <div class="why-item">
+          <span class="why-asterisk">✳</span>
+          <p class="why-item-title">{{why_us_section.items[1].title}}</p>
+          <p class="why-item-desc">{{why_us_section.items[1].description}}</p>
+        </div>
+
+        <div class="why-item">
+          <span class="why-asterisk">✳</span>
+          <p class="why-item-title">{{why_us_section.items[2].title}}</p>
+          <p class="why-item-desc">{{why_us_section.items[2].description}}</p>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="why-image"><img src="{{why_us_section.image.url}}" alt="{{why_us_section.image.alt}}"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 6 – TESTIMONIALS
+ ════════════════════════════════════════════ -->
+  <section class="section-6">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <p class="section-label justify-content-center"><i class="fa-solid fa-leaf"></i> {{testimonials_section.eyebrow}}</p>
+        <h2 class="testimonials-title">{{testimonials_section.title}}</h2>
+      </div>
+
+      <div class="row gy-6">
+
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="d-flex align-items-center gap-3">
+              <img src="{{testimonials_section.cards[0].avatar.url}}" alt="{{testimonials_section.cards[0].avatar.alt}}" class="reviewer-avatar" />
+              <div>
+                <p class="reviewer-name">{{testimonials_section.cards[0].name}}</p>
+                <p class="reviewer-location">{{testimonials_section.cards[0].location}}</p>
+              </div>
+            </div>
+            <p class="review-text">"{{testimonials_section.cards[0].review}}"</p>
+            <div class="review-footer">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="google-g">G</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="d-flex align-items-center gap-3">
+              <img src="{{testimonials_section.cards[1].avatar.url}}" alt="{{testimonials_section.cards[1].avatar.alt}}" class="reviewer-avatar" />
+              <div>
+                <p class="reviewer-name">{{testimonials_section.cards[1].name}}</p>
+                <p class="reviewer-location">{{testimonials_section.cards[1].location}}</p>
+              </div>
+            </div>
+            <p class="review-text">"{{testimonials_section.cards[1].review}}"</p>
+            <div class="review-footer">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="google-g">G</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 7 – OUR PROJECTS
+ ════════════════════════════════════════════ -->
+  <section class="section-7">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <p class="section-label justify-content-center"><i class="fa-solid fa-leaf"></i> {{projects_section.eyebrow}}</p>
+        <h2 class="projects-title">{{projects_section.title}}</h2>
+      </div>
+
+      <div class="row gy-6">
+
+        <div class="col-12 col-md-4">
+          <div class="project-card">
+            <img src="{{projects_section.cards[0].image.url}}" alt="{{projects_section.cards[0].image.alt}}" />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="project-card">
+            <img src="{{projects_section.cards[1].image.url}}" alt="{{projects_section.cards[1].image.alt}}" />
+            <div class="project-overlay">
+              <p>{{projects_section.cards[1].overlay_text}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="project-card">
+            <img src="{{projects_section.cards[2].image.url}}" alt="{{projects_section.cards[2].image.alt}}" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="{{projects_section.cta.link}}" class="btn-outline-dark">{{projects_section.cta.text}} <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+     SECTION 8 – CTA BANNER
+ ════════════════════════════════════════════ -->
+  <section class="section-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7 ms-auto">
+          <h2 class="cta-title">{{cta_banner_section.title}}</h2>
+          <p class="cta-subtitle">{{cta_banner_section.description}}</p>
+          <a href="{{cta_banner_section.cta.link}}" class="btn-yellow">{{cta_banner_section.cta.text}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <!-- ════════════════════════════════════════════════════════
+     SECTION 10 – SERVICES PAGE HERO BANNER
+ ════════════════════════════════════════════════════════ -->
+  <section class="section-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-7">
+          <h1 class="services-hero-title">{{services_hero_section.title}}</h1>
+          <p class="services-hero-sub">
+            {{services_hero_section.subtitle}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+     SECTION 11 – OUR FULL RANGE OF SERVICES
+ ════════════════════════════════════════════════════════ -->
+  <section class="section-11">
+    <div class="container">
+
+      <!-- Heading block -->
+      <div class="row">
+        <div class="col-12 text-center mb-6">
+          <p class="section-label services-range-label justify-content-center">
+            <i class="fa-solid fa-leaf"></i> {{services_range_section.eyebrow}}
+          </p>
+          <h2 class="services-range-title">{{services_range_section.title}}</h2>
+          <p class="services-range-desc">
+            {{services_range_section.description}}
+          </p>
+        </div>
+      </div>
+
+      <!-- Cards row -->
+      <div class="row gy-4">
+
+        <!-- Card 1 – Garden Design & Planning -->
+        <div class="col-12 col-md-6">
+          <div class="svc-card">
+            <img src="{{services_range_section.cards[0].image.url}}" alt="{{services_range_section.cards[0].image.alt}}" class="svc-card-img" />
+            <div class="svc-card-body">
+              <!-- Line-art garden icon -->
+              <span class="svc-card-icon">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="10" y1="38" x2="10" y2="10" stroke="#1a2e25" stroke-width="1.6" />
+                  <line x1="18" y1="38" x2="18" y2="14" stroke="#1a2e25" stroke-width="1.6" />
+                  <circle cx="10" cy="8" r="4" stroke="#1a2e25" stroke-width="1.6" fill="none" />
+                  <circle cx="18" cy="12" r="4" stroke="#1a2e25" stroke-width="1.6" fill="none" />
+                  <line x1="28" y1="38" x2="28" y2="18" stroke="#1a2e25" stroke-width="1.6" />
+                  <circle cx="28" cy="16" r="4" stroke="#1a2e25" stroke-width="1.6" fill="none" />
+                  <line x1="6" y1="38" x2="38" y2="38" stroke="#1a2e25" stroke-width="1.6" />
+                </svg>
+              </span>
+              <p class="svc-card-title">{{services_range_section.cards[0].title}}</p>
+              <p class="svc-card-desc">
+                {{services_range_section.cards[0].description}}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 – Lawn Care & Maintenance -->
+        <div class="col-12 col-md-6">
+          <div class="svc-card">
+            <img src="{{services_range_section.cards[1].image.url}}" alt="{{services_range_section.cards[1].image.alt}}" class="svc-card-img" />
+            <div class="svc-card-body">
+              <!-- Line-art mower icon -->
+              <span class="svc-card-icon">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- mower body -->
+                  <rect x="10" y="20" width="22" height="10" rx="2" stroke="#1a2e25" stroke-width="1.6" fill="none" />
+                  <!-- handle -->
+                  <line x1="28" y1="20" x2="36" y2="10" stroke="#1a2e25" stroke-width="1.6" />
+                  <!-- wheels -->
+                  <circle cx="14" cy="32" r="3.5" stroke="#1a2e25" stroke-width="1.6" fill="none" />
+                  <circle cx="28" cy="32" r="3.5" stroke="#1a2e25" stroke-width="1.6" fill="none" />
+                  <!-- grass line -->
+                  <line x1="4" y1="38" x2="42" y2="38" stroke="#1a2e25" stroke-width="1.6" />
+                </svg>
+              </span>
+              <p class="svc-card-title">{{services_range_section.cards[1].title}}</p>
+              <p class="svc-card-desc">
+                {{services_range_section.cards[1].description}}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 – Landscape Architecture -->
+        <div class="col-12 col-md-6">
+          <div class="svc-card">
+            <img src="{{services_range_section.cards[2].image.url}}" alt="{{services_range_section.cards[2].image.alt}}" class="svc-card-img" />
+            <div class="svc-card-body">
+              <span class="svc-card-icon">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- arch -->
+                  <path d="M10 36 Q10 16 23 16 Q36 16 36 36" stroke="#1a2e25" stroke-width="1.6" fill="none" />
+                  <line x1="6" y1="36" x2="40" y2="36" stroke="#1a2e25" stroke-width="1.6" />
+                  <!-- sun/decor -->
+                  <circle cx="23" cy="10" r="3" stroke="#1a2e25" stroke-width="1.4" fill="none" />
+                </svg>
+              </span>
+              <p class="svc-card-title">{{services_range_section.cards[2].title}}</p>
+              <p class="svc-card-desc">
+                {{services_range_section.cards[2].description}}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 – Seasonal Planting Services -->
+        <div class="col-12 col-md-6">
+          <div class="svc-card">
+            <img src="{{services_range_section.cards[3].image.url}}" alt="{{services_range_section.cards[3].image.alt}}" class="svc-card-img" />
+            <div class="svc-card-body">
+              <span class="svc-card-icon">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- stem -->
+                  <line x1="23" y1="38" x2="23" y2="18" stroke="#1a2e25" stroke-width="1.6" />
+                  <!-- leaf left -->
+                  <path d="M23 28 Q14 22 12 14 Q20 16 23 28" stroke="#1a2e25" stroke-width="1.4" fill="none" />
+                  <!-- leaf right -->
+                  <path d="M23 24 Q32 18 34 10 Q26 12 23 24" stroke="#1a2e25" stroke-width="1.4" fill="none" />
+                  <!-- ground -->
+                  <line x1="12" y1="38" x2="34" y2="38" stroke="#1a2e25" stroke-width="1.6" />
+                </svg>
+              </span>
+              <p class="svc-card-title">{{services_range_section.cards[3].title}}</p>
+              <p class="svc-card-desc">
+                {{services_range_section.cards[3].description}}
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+     SECTION 12 – DECADES OF TRUSTED EXCELLENCE
+ ════════════════════════════════════════════════════════ -->
+  <section class="section-12">
+    <div class="container">
+      <div class="row gy-5 align-items-center">
+
+        <!-- ── Left: Image + badge ── -->
+        <div class="col-12 col-lg-5">
+          <div class="legacy-img-wrap position-relative">
+            <img src="{{legacy_section.image.url}}" alt="{{legacy_section.image.alt}}" class="legacy-main-img" />
+            <!-- 25+ years badge -->
+            <div class="legacy-badge">
+              <span class="legacy-badge-number">{{legacy_section.badge.number}}</span>
+              <span class="legacy-badge-label">{{legacy_section.badge.label}}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Right: Content ── -->
+        <div class="col-12 col-lg-7">
+          <p class="section-label legacy-label">
+            <i class="fa-solid fa-leaf"></i> {{legacy_section.eyebrow}}
+          </p>
+          <h2 class="legacy-title">{{legacy_section.title}}</h2>
+          <p class="legacy-desc">
+            {{legacy_section.description}}
+          </p>
+
+          <!-- Check list -->
+          <ul class="legacy-check-list">
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              {{legacy_section.checklist[0]}}
+            </li>
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              {{legacy_section.checklist[1]}}
+            </li>
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              {{legacy_section.checklist[2]}}
+            </li>
+          </ul>
+
+          <a href="{{legacy_section.cta.link}}" class="btn-outline-dark">
+            {{legacy_section.cta.text}} <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     SECTION 9 – FOOTER
+ ════════════════════════════════════════════ -->
+  <footer class="section-9">
+    <div class="container">
+      <div class="row gy-5 pb-5">
+
+        <!-- Brand -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="footer-brand-wrap">
+            <i class="{{footer_section.brand.icon}}"></i> {{footer_section.brand.text}}
+          </div>
+          <p class="footer-tagline">{{footer_section.tagline}}</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <p class="footer-col-title">{{footer_section.quick_links.title}}</p>
+          <ul class="footer-links">
+            <li><a href="{{footer_section.quick_links.links[0].url}}">{{footer_section.quick_links.links[0].text}}</a></li>
+            <li><a href="{{footer_section.quick_links.links[1].url}}">{{footer_section.quick_links.links[1].text}}</a></li>
+            <li><a href="{{footer_section.quick_links.links[2].url}}">{{footer_section.quick_links.links[2].text}}</a></li>
+            <li><a href="{{footer_section.quick_links.links[3].url}}">{{footer_section.quick_links.links[3].text}}</a></li>
+            <li><a href="{{footer_section.quick_links.links[4].url}}">{{footer_section.quick_links.links[4].text}}</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <p class="footer-col-title">{{footer_section.services.title}}</p>
+          <ul class="footer-links">
+            <li><a href="{{footer_section.services.links[0].url}}">{{footer_section.services.links[0].text}}</a></li>
+            <li><a href="{{footer_section.services.links[1].url}}">{{footer_section.services.links[1].text}}</a></li>
+            <li><a href="{{footer_section.services.links[2].url}}">{{footer_section.services.links[2].text}}</a></li>
+            <li><a href="{{footer_section.services.links[3].url}}">{{footer_section.services.links[3].text}}</a></li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <p class="footer-col-title">{{footer_section.address.title}}</p>
+          <p class="footer-address">{{footer_section.address.street}}</p>
+          <p class="footer-phone"><strong>Call Us:</strong> {{footer_section.address.phone}}</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">{{footer_section.copyright}}</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navbarNav = document.querySelector('.navbar-nav');
+
+    mobileToggle.addEventListener('click', () => {
+      navbarNav.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>

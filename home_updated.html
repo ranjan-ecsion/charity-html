@@ -1,0 +1,510 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Younited Lending | Smarter Mortgage. Better Outcomes.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#5d2300",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary-container": "#192a37",
+                        "tertiary-fixed-dim": "#b7c9da",
+                        "on-secondary-fixed": "#341000",
+                        "on-tertiary-fixed": "#0b1d2a",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#43474d",
+                        "outline-variant": "#c3c6ce",
+                        "secondary-fixed-dim": "#ffb693",
+                        "on-primary-fixed": "#001d36",
+                        "navy": "#0F2A44",
+                        "on-primary-container": "#7992b1",
+                        "surface-tint": "#48607d",
+                        "tertiary": "#041522",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fc7728",
+                        "tertiary-fixed": "#d3e5f6",
+                        "secondary-fixed": "#ffdbcb",
+                        "primary-fixed-dim": "#b0c9ea",
+                        "primary": "#00152a",
+                        "ember-orange": "#F37021",
+                        "white": "#FFFFFF",
+                        "on-tertiary-fixed-variant": "#384957",
+                        "surface-variant": "#e0e3e5",
+                        "primary-container": "#0f2a44",
+                        "light-gray": "#F4F6F8",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f8f9fb",
+                        "inverse-surface": "#2d3133",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d1e4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "surface-container": "#eceef0",
+                        "inverse-primary": "#b0c9ea",
+                        "on-surface": "#191c1e",
+                        "slate-gray": "#5A6B7A",
+                        "secondary": "#a04100",
+                        "on-background": "#191c1e",
+                        "background": "#f8f9fb",
+                        "on-primary-fixed-variant": "#304864",
+                        "outline": "#74777e",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-container": "#8091a1",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-container-low": "#f2f4f6",
+                        "surface": "#f8f9fb",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "base": "8px",
+                        "component-padding": "24px",
+                        "stack-lg": "40px",
+                        "stack-md": "16px",
+                        "section-padding-v": "80px",
+                        "section-padding-h": "40px",
+                        "container-max": "1100px"
+                    },
+                    "fontFamily": {
+                        "label-cta": ["Inter"],
+                        "body-small": ["Inter"],
+                        "heading-callout": ["Inter"],
+                        "label-eyebrow": ["Inter"],
+                        "subheading-card": ["Inter"],
+                        "badge-tag": ["Inter"],
+                        "body-lead": ["Inter"],
+                        "headline-section": ["Inter"],
+                        "display-hero-mobile": ["Inter"],
+                        "body-standard": ["Inter"],
+                        "display-hero": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-cta": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.06em", "fontWeight": "700"}],
+                        "body-small": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "heading-callout": ["20px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                        "label-eyebrow": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.16em", "fontWeight": "700"}],
+                        "subheading-card": ["17px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "badge-tag": ["11px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lead": ["17px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-section": ["28px", {"lineHeight": "1.3", "letterSpacing": "0.06em", "fontWeight": "800"}],
+                        "display-hero-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-standard": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-hero": ["52px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .y-angle-cut-bottom {
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+        }
+        .y-angle-cut-top {
+            clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+        }
+        .glass-badge {
+            background: rgba(243, 112, 33, 0.12);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(243, 112, 33, 0.2);
+        }
+    </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Younited Lending",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1234 Wingo Way",
+    "addressLocality": "Mount Pleasant",
+    "addressRegion": "SC",
+    "postalCode": "29464",
+    "addressCountry": "US"
+  },
+  "url": "https://younitedlending.com",
+  "telephone": "",
+  "priceRange": "$$",
+  "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBfhDb3fRYzxmtuuSY5R27FkNuXisI0ysubji0wJQXAaYly6BLcWVslDhtGOISyOEDjdNloIPXxsjPt2VINsh1xNJKnHxoPyKomLzbLr8pX-HgjGWoyyJ8kkZnbjw6z0qNErqZM62CoWItJGoki8nhzU0E4ljkiB92wHGF-CfiVdqaJQDjo6pMYVkHvi9lcuIhbeA50Pohe9CBl9hn_7Ac2LhVVrEPUAAIR9i2QWxPXRHQ0bWCui_ogZhzD2D4vZRUpAhr1KhYG6dqI"
+}</script></head>
+<body class="bg-background text-on-background font-body-standard selection:bg-ember-orange selection:text-white">
+<!-- TopNavBar -->
+<nav class="bg-navy dark:bg-navy shadow-sm dark:shadow-none fixed top-0 z-50 w-full h-20">
+<div class="flex justify-between items-center w-full px-component-padding max-w-container-max mx-auto h-full">
+<div class="flex items-center gap-2">
+<span class="font-headline-section text-white tracking-tight">Younited Lending</span>
+</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-cta text-label-cta text-white border-b-2 border-ember-orange pb-1" href="#">Loan Options</a>
+<a class="font-label-cta text-label-cta text-white/80 hover:text-white transition-colors" href="#">Mortgage Tools</a>
+<a class="font-label-cta text-label-cta text-white/80 hover:text-white transition-colors" href="#">About Us</a>
+<a class="font-label-cta text-label-cta text-white/80 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden md:flex items-center gap-2 text-white/80 hover:text-white">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+<button class="bg-ember-orange text-white font-label-cta text-label-cta px-6 py-3 rounded-lg uppercase tracking-[0.06em] hover:scale-105 active:scale-95 transition-all shadow-md">
+                    Apply Now
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[90vh] flex items-center bg-navy text-white pt-20 y-angle-cut-bottom overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Younited Lending headquarters providing strategic mortgage solutions in Charleston, SC near Ravenel Bridge" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfhDb3fRYzxmtuuSY5R27FkNuXisI0ysubji0wJQXAaYly6BLcWVslDhtGOISyOEDjdNloIPXxsjPt2VINsh1xNJKnHxoPyKomLzbLr8pX-HgjGWoyyJ8kkZnbjw6z0qNErqZM62CoWItJGoki8nhzU0E4ljkiB92wHGF-CfiVdqaJQDjo6pMYVkHvi9lcuIhbeA50Pohe9CBl9hn_7Ac2LhVVrEPUAAIR9i2QWxPXRHQ0bWCui_ogZhzD2D4vZRUpAhr1KhYG6dqI">
+<div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-component-padding grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-stack-lg">
+<div class="inline-flex glass-badge px-4 py-2 rounded-full">
+<span class="font-label-eyebrow text-label-eyebrow text-ember-orange">CHARLESTON'S STRATEGIC BROKER</span>
+</div>
+<h1 class="font-display-hero text-display-hero md:text-display-hero leading-tight uppercase">Younited Lending —<br><span class="text-ember-orange">Strategic Mortgage Solutions in Charleston</span></h1>
+<p class="font-body-lead text-body-lead text-white/90 max-w-xl">
+                    Independent expertise with access to 100+ wholesale lenders. We offer real human guidance for Mount Pleasant and beyond, backed by the speed of modern technology to ensure you get the best deal possible.
+                </p><p class="font-body-standard text-white/80 max-w-xl mt-4">Younited Lending is the premier independent mortgage strategist in Charleston and Mount Pleasant, SC. We offer wholesale interest rates and specialized strategies for VA, FHA, and conventional loans, ensuring better financial outcomes for Lowcountry homeowners.</p>
+<div class="flex flex-wrap gap-gutter">
+<button class="bg-ember-orange text-white font-label-cta text-label-cta px-10 py-4 rounded-lg uppercase tracking-[0.06em] hover:-translate-y-1 hover:shadow-xl transition-all">
+                        View Rates
+                    </button>
+<button class="border-2 border-white text-white font-label-cta text-label-cta px-10 py-4 rounded-lg uppercase tracking-[0.06em] hover:bg-white hover:text-navy transition-all">
+                        Speak to an Advisor
+                    </button>
+</div>
+</div>
+<!-- Trust Stats -->
+<div class="hidden md:flex flex-col gap-6">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-xl border border-white/10">
+<p class="font-display-hero-mobile text-ember-orange">35+</p>
+<p class="font-label-eyebrow text-white/80">Years Combined Experience</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-xl border border-white/10">
+<p class="font-display-hero-mobile text-ember-orange">100+</p>
+<p class="font-label-eyebrow text-white/80">Lending Partners</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-xl border border-white/10">
+<p class="font-display-hero-mobile text-ember-orange">5-Star</p>
+<p class="font-label-eyebrow text-white/80">Client Rated</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-xl border border-white/10">
+<p class="font-display-hero-mobile text-ember-orange">4</p>
+<p class="font-label-eyebrow text-white/80">States Licensed</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Comparison Callout -->
+<section class="py-12 bg-white px-component-padding -mt-10 relative z-20 max-w-4xl mx-auto rounded-xl shadow-2xl border border-surface-container">
+<div class="text-center mb-8">
+<h2 class="font-heading-callout text-navy">Why Brokers Win Over Big Banks</h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-standard">
+<thead>
+<tr class="border-b border-surface-container">
+<th class="py-4 text-slate-gray font-label-eyebrow uppercase">Feature</th>
+<th class="py-4 text-navy font-bold">Younited Lending</th>
+<th class="py-4 text-slate-gray">Retail Bank</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr>
+<td class="py-4 text-slate-gray">Loan Programs</td>
+<td class="py-4 text-navy font-bold">100+ Sources</td>
+<td class="py-4 text-slate-gray">Only Their Own</td>
+</tr>
+<tr>
+<td class="py-4 text-slate-gray">Pricing Strategy</td>
+<td class="py-4 text-navy font-bold">Wholesale Rates</td>
+<td class="py-4 text-slate-gray">Retail Markups</td>
+</tr>
+<tr>
+<td class="py-4 text-slate-gray">Processing Speed</td>
+<td class="py-4 text-navy font-bold">14-21 Days Avg.</td>
+<td class="py-4 text-slate-gray">35-50 Days Avg.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Who We Help Section -->
+<section class="py-section-padding-v px-component-padding bg-background">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 space-y-4">
+<span class="font-label-eyebrow text-label-eyebrow text-ember-orange">TAILORED SOLUTIONS</span>
+<h2 class="font-headline-section text-headline-section text-navy uppercase">Who We Help</h2>
+<div class="w-20 h-1 bg-gradient-to-r from-ember-orange to-transparent mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-white p-gutter rounded-lg shadow-sm border-l-4 border-ember-orange">
+<h3 class="font-subheading-card text-navy mb-4">First-Time Buyers</h3>
+<p class="font-body-standard text-slate-gray">Low down payment options and expert guidance to help you navigate your very first home purchase with confidence.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-gutter rounded-lg shadow-sm border-l-4 border-navy">
+<h3 class="font-subheading-card text-navy mb-4">VA Loan Specialists</h3>
+<p class="font-body-standard text-slate-gray">Honoring those who serve with 0% down programs and specialized expertise in military housing benefits.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-gutter rounded-lg shadow-sm border-l-4 border-navy">
+<h3 class="font-subheading-card text-navy mb-4">Self-Employed</h3>
+<p class="font-body-standard text-slate-gray">Bank statement programs and alternative documentation to prove your income without the red tape.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-gutter rounded-lg shadow-sm border-l-4 border-navy">
+<h3 class="font-subheading-card text-navy mb-4">Real Estate Investors</h3>
+<p class="font-body-standard text-slate-gray">DSCR loans and portfolio lending strategies designed to help you scale your rental property empire.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white p-gutter rounded-lg shadow-sm border-l-4 border-navy">
+<h3 class="font-subheading-card text-navy mb-4">Move-Up Buyers</h3>
+<p class="font-body-standard text-slate-gray">Strategic financing to help you sell your current home and transition into your forever home seamlessly.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-white p-gutter rounded-lg shadow-sm border-l-4 border-navy">
+<h3 class="font-subheading-card text-navy mb-4">Refinance Seekers</h3>
+<p class="font-body-standard text-slate-gray">Lower your rate, shorten your term, or pull out cash equity for home improvements or debt consolidation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Loan Programs Pills -->
+<section class="py-12 bg-navy">
+<div class="max-w-container-max mx-auto px-component-padding">
+<div class="flex flex-wrap justify-center gap-4">
+<span class="px-6 py-2 rounded-full border border-white/20 text-white font-label-cta text-sm">CONVENTIONAL</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-white font-label-cta text-sm">FHA</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-white font-label-cta text-sm">VA</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-white font-label-cta text-sm">USDA</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-white font-label-cta text-sm">JUMBO</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-white font-label-cta text-sm">DSCR</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-white font-label-cta text-sm">NON-QM</span>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-section-padding-v px-component-padding bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 space-y-4">
+<span class="font-label-eyebrow text-label-eyebrow text-ember-orange">THE PROCESS</span>
+<h2 class="font-headline-section text-headline-section text-navy uppercase">How It Works</h2>
+<div class="w-20 h-1 bg-gradient-to-r from-ember-orange to-transparent mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-12 relative">
+<!-- Step 1 -->
+<div class="text-center relative z-10">
+<div class="w-20 h-20 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-8 text-2xl font-bold shadow-xl">1</div>
+<h3 class="font-subheading-card text-navy mb-4">Talk First</h3>
+<p class="font-body-standard text-slate-gray">We discuss your financial goals, credit profile, and homeownership dreams to build your unique strategy.</p>
+</div>
+<!-- Step 2 -->
+<div class="text-center relative z-10">
+<div class="w-20 h-20 bg-ember-orange text-white rounded-full flex items-center justify-center mx-auto mb-8 text-2xl font-bold shadow-xl">2</div>
+<h3 class="font-subheading-card text-navy mb-4">We Shop</h3>
+<p class="font-body-standard text-slate-gray">We leverage our network of 100+ wholesale lenders to find the specific program with the best rates and terms.</p>
+</div>
+<!-- Step 3 -->
+<div class="text-center relative z-10">
+<div class="w-20 h-20 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-8 text-2xl font-bold shadow-xl">3</div>
+<h3 class="font-subheading-card text-navy mb-4">Close With Confidence</h3>
+<p class="font-body-standard text-slate-gray">With AI-backed processing and expert guidance, you'll clear to close faster than the industry average.</p>
+</div>
+<!-- Connecting Line -->
+<div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-navy/10 -z-0"></div>
+</div>
+</div>
+</section>
+<!-- About Alan Module -->
+<section class="py-section-padding-v px-component-padding bg-white overflow-hidden">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl relative z-10">
+<img alt="Alan Crawford, Founder of Younited Lending and Charleston mortgage expert in Mount Pleasant, SC" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxyfUTU6iuwH7blf6OaGo_n-K8G3hUT9l7YlCU2xOVy8pwwXIrXFEDjLKz8KfIBp_SBMXFKtLXsabwbZuC8owljNDY3t6i7X6VYfgDU3Skwt1tY0h2J9tdoGMv_BSXUtqy2fc3xn7udgLL2mNmOltQtw2H8b8-KYdkN5lwjWSqdc6AFcrJ9LXAn3EXr6v0OvJqpreWNsSwGG4BKapPeWLEAYGgTXroojR-MT0AdSCUIHTcvxn273P-hP4bg1DL1IQjqwI-lBrmHrW-">
+</div>
+<div class="absolute -bottom-6 -right-6 w-48 h-48 bg-ember-orange/10 rounded-full blur-3xl -z-0"></div>
+<div class="absolute -top-6 -left-6 w-48 h-48 bg-navy/5 rounded-full blur-3xl -z-0"></div>
+</div>
+<div class="space-y-6">
+<span class="font-label-eyebrow text-ember-orange uppercase tracking-widest">About the Founder</span>
+<h2 class="font-headline-section text-navy">Meet Alan Crawford</h2>
+<p class="font-body-lead text-slate-gray italic">"My mission is to simplify the mortgage process while delivering institutional-grade financial strategies to every client."</p><p class="font-body-standard text-white/80 max-w-xl mt-4">Younited Lending is the premier independent mortgage strategist in Charleston and Mount Pleasant, SC. We offer wholesale interest rates and specialized strategies for VA, FHA, and conventional loans, ensuring better financial outcomes for Lowcountry homeowners.</p>
+<p class="font-body-standard text-slate-gray">
+                    With over 15 years in the financial services industry, Alan founded Younited Lending to bridge the gap between high-tech efficiency and high-touch service. Based in Mount Pleasant, Alan specializes in helping Charleston families navigate complex loan scenarios with ease.
+                </p>
+<div class="flex items-center gap-6 pt-4">
+<button class="bg-navy text-white px-8 py-3 rounded-lg font-label-cta uppercase tracking-widest hover:bg-navy/90 transition-all">Read Full Bio</button>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-ember-orange">verified</span>
+<span class="font-label-cta text-navy">NMLS #123456</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Realtor Testimonials -->
+<section class="py-section-padding-v px-component-padding bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-xl">
+<span class="font-label-eyebrow text-label-eyebrow text-ember-orange">PARTNERS IN SUCCESS</span>
+<h2 class="font-headline-section text-headline-section text-navy">Trusted by Charleston's Top Realtors</h2>
+</div>
+<button class="text-navy font-label-cta text-label-cta flex items-center gap-2 hover:gap-4 transition-all uppercase">
+                    Partner With Us <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid md:grid-cols-2 gap-gutter">
+<!-- Review 1 -->
+<div class="bg-white p-8 rounded-lg shadow-sm flex gap-6">
+<div class="shrink-0">
+<div class="w-16 h-16 rounded-full bg-slate-gray/10 overflow-hidden">
+<img alt="Realtor Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxyfUTU6iuwH7blf6OaGo_n-K8G3hUT9l7YlCU2xOVy8pwwXIrXFEDjLKz8KfIBp_SBMXFKtLXsabwbZuC8owljNDY3t6i7X6VYfgDU3Skwt1tY0h2J9tdoGMv_BSXUtqy2fc3xn7udgLL2mNmOltQtw2H8b8-KYdkN5lwjWSqdc6AFcrJ9LXAn3EXr6v0OvJqpreWNsSwGG4BKapPeWLEAYGgTXroojR-MT0AdSCUIHTcvxn273P-hP4bg1DL1IQjqwI-lBrmHrW-">
+</div>
+</div>
+<div>
+<div class="flex text-ember-orange mb-2">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-standard text-body-standard text-slate-gray mb-4 italic">
+                            "Younited is my secret weapon. They solve problems other lenders can't touch and their communication is flawless. My clients are always impressed."
+                        </p>
+<p class="font-subheading-card text-subheading-card text-navy">Sarah Jenkins</p>
+<p class="font-body-small text-body-small text-slate-gray">Luxury Charleston Properties</p>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-white p-8 rounded-lg shadow-sm flex gap-6">
+<div class="shrink-0">
+<div class="w-16 h-16 rounded-full bg-slate-gray/10 overflow-hidden">
+<img alt="Realtor Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATHZBZPwcdVy4--SBGF6H_Yo7MOQNMX7DAA37qY6a8bx9kokA_UyTDFqt60t7WtrUGzcQAVRhGMx0OliA_VEp7vtpfJFL28gj9jG2foXaa1d_6crnuxaeMflmL0XfBkjsj_l3a1G0QG-4z1xu1O8y4YYSqFBUf5BwhVyxofo2KhKKFyKNCCBxgPxZmOhG1BuLWnSaAP9o2Z8tgVxAjWPCxbjtuh8z8yyLwFrMfrKZ3R2LwvQ71lSVO8_b5PVGATiCPI746y4GI1kMW">
+</div>
+</div>
+<div>
+<div class="flex text-ember-orange mb-2">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-standard text-body-standard text-slate-gray mb-4 italic">
+                            "The speed at which they get pre-approvals out on weekends is a game-changer in this market. I never have to worry about a closing with Younited."
+                        </p>
+<p class="font-subheading-card text-subheading-card text-navy">Marcus Thorne</p>
+<p class="font-body-small text-body-small text-slate-gray">Isle of Palms Realty</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="py-section-padding-v px-component-padding bg-white">
+<div class="max-w-container-max mx-auto bg-navy rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+<div class="p-stack-lg md:p-section-padding-h flex-1">
+<h2 class="font-headline-section text-headline-section text-white mb-6">Ready to close with confidence?</h2>
+<p class="font-body-lead text-body-lead text-white/80 mb-8">
+                    Get a personalized quote or a same-day pre-approval letter. Our team is standing by.
+                </p><p class="font-body-standard text-white/80 max-w-xl mt-4">Younited Lending is the premier independent mortgage strategist in Charleston and Mount Pleasant, SC. We offer wholesale interest rates and specialized strategies for VA, FHA, and conventional loans, ensuring better financial outcomes for Lowcountry homeowners.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-white/10 border-white/20 text-white rounded-lg focus:ring-ember-orange focus:border-ember-orange font-body-standard px-6 py-4" placeholder="Email Address" type="email">
+<button class="bg-ember-orange text-white px-8 py-4 rounded-lg font-label-cta text-label-cta uppercase tracking-widest hover:scale-105 transition-all">
+                        Start Now
+                    </button>
+</div>
+</div>
+<div class="hidden md:block w-1/3 relative">
+<img alt="Office Building" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArNYqO-9e0gKsM8n_RE82XyMWhExIRyuSOFfe8RU5chSqr-rkIGjd1-Ee3xKnTKj6HFSWxlWEYmNOkkWxuMB7NDlBI_tyAhptEUCSspZQ5MAL3dl9HI5uHU6azwXGY1WwTwFFd9nayeGndALPo02a_e6q5Q450DrX7azCSFO3kCchrGtIo7zR48qQc6KCtIa5LUeXKCQYiTjiYZrXVU1FK9Hx0tGqYxAKRDvvBHr5Z0cwcwc_EHZ_rm5I0CfsBbXZeF0G3tkMm30ph">
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-tertiary text-on-surface dark:text-on-tertiary y-angle-cut-top mt-12 relative">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-component-padding pt-32 pb-section-padding-v max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="space-y-6">
+<span class="font-headline-section text-navy dark:text-white">Younited Lending</span>
+<p class="font-body-small text-body-small text-slate-gray">
+                    Empowering Charleston homeowners through strategic financial intelligence and human-centered mortgage solutions.
+                </p>
+<div class="space-y-1">
+<p class="font-label-eyebrow text-label-eyebrow text-navy">HEADQUARTERS</p>
+<p class="font-body-small text-body-small text-slate-gray">
+                        1234 Wingo Way<br>Mount Pleasant, SC 29464
+                    </p>
+</div>
+</div>
+<!-- Loans Column -->
+<div class="space-y-4">
+<p class="font-subheading-card text-subheading-card text-navy dark:text-white uppercase tracking-wider">Loan Programs</p>
+<ul class="space-y-2">
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Purchase</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Refinance</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">VA Loans</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">FHA Loans</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Conventional</a></li>
+</ul>
+</div>
+<!-- Resources Column -->
+<div class="space-y-4">
+<p class="font-subheading-card text-subheading-card text-navy dark:text-white uppercase tracking-wider">Resources</p>
+<ul class="space-y-2">
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Mortgage Calculator</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Rates Dashboard</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Charleston Guide</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block" href="#">Terms of Service</a></li>
+<li class=""><a class="font-body-small text-body-small text-slate-gray hover:text-navy hover:translate-x-1 transition-all inline-block font-bold" href="#">Charleston Real Estate Hub</a></li></ul>
+</div>
+<!-- Licensing Column -->
+<div class="bg-navy p-6 rounded-xl text-white space-y-4">
+<p class="font-label-eyebrow text-label-eyebrow text-ember-orange">COMPLIANCE</p>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl" data-icon="gavel">gavel</span>
+<div>
+<p class="font-subheading-card text-subheading-card">NMLS #1927343</p>
+<p class="font-body-small text-body-small text-white/60">Registered &amp; Bonded</p>
+</div>
+</div>
+<div class="h-px bg-white/10"></div>
+<p class="font-body-small text-body-small text-white/70">
+                    Younited Lending is an Equal Housing Lender. NMLS Consumer Access. Licensed in SC, GA, FL, NC.
+                </p>
+</div>
+</div>
+<div class="border-t border-slate-gray/10 py-6 text-center">
+<p class="font-label-eyebrow text-[10px] text-slate-gray uppercase">
+                © 2024 Younited Lending. All rights reserved. | NMLS #1927343 | Charleston Mortgages.
+            </p>
+</div>
+</footer>
+
+
+</body></html>

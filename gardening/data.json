@@ -1,0 +1,187 @@
+{
+  "navbar": {
+    "brand": {
+      "text": "Earthly Elegance",
+      "icon": "fa-solid fa-leaf"
+    },
+    "links": [
+      { "text": "Home", "link": "#", "active": true },
+      { "text": "About", "link": "#", "active": false },
+      { "text": "Services", "link": "#", "active": false },
+      { "text": "Projects", "link": "#", "active": false },
+      { "text": "Contact", "link": "#", "active": false }
+    ],
+    "cta": { "text": "Get a Free Quote", "link": "#" }
+  },
+  "hero_section": {
+    "title": "Create Stunning outdoor Gardens with Expert Care",
+    "subtitle": "Discover the Art of Sustainable and Beautiful Landscapes",
+    "cta_primary": { "text": "Get a Free Quote", "link": "#" },
+    "cta_secondary": { "text": "Call Us Now", "link": "#" },
+    "background_image": "./assets/img/hero-bg.webp"
+  },
+  "value_props_section": [
+    { "icon": "fa-solid fa-dollar-sign", "title": "Affordable Prices", "description": "Quality gardening and landscaping services at competitive, fair rates." },
+    { "icon": "fa-solid fa-users", "title": "Expert Team", "description": "Skilled professionals dedicated to crafting stunning outdoor spaces." },
+    { "icon": "fa-solid fa-recycle", "title": "Sustainable Practices", "description": "Eco-friendly solutions that enhance beauty and protect nature." },
+    { "icon": "fa-solid fa-tree", "title": "Customer Focus", "description": "Prioritizing client satisfaction with personalized, attentive service." }
+  ],
+  "about_section": {
+    "eyebrow": "ABOUT US",
+    "title": "Bringing your Garden Dreams to Life",
+    "description": "With over 25 years of expertise in gardening and landscaping, we design and nurture stunning outdoor spaces tailored to your vision. From serene gardens to functional landscapes, our team is dedicated to excellence.",
+    "checklist": ["Commercial Gardening", "Residential Gardening", "Industrial Gardening"],
+    "cta": { "text": "Learn More", "link": "#" },
+    "images": [
+      { "url": "./assets/img/about-1.webp", "alt": "Team in greenhouse" },
+      { "url": "./assets/img/about-2.webp", "alt": "Gardener trimming" }
+    ]
+  },
+  "services_section": {
+    "eyebrow": "OUR SERVICES",
+    "title": "Comprehensive Gardening and Landscaping Solutions",
+    "cta": { "text": "Explore Our Services", "link": "#" },
+    "cards": [
+      {
+        "icon": "fa-regular fa-object-group",
+        "title": "Garden Design & Planning",
+        "description": "Turn your ideas into stunning outdoor realities.",
+        "image": { "url": "./assets/img/services01.webp", "alt": "Garden Design" }
+      },
+      {
+        "icon": "fa-solid fa-tractor",
+        "title": "Lawn Care & Maintenance",
+        "description": "Keep your garden vibrant and healthy year-round.",
+        "image": { "url": "./assets/img/services02.webp", "alt": "Lawn Care" }
+      },
+      {
+        "icon": "fa-solid fa-archway",
+        "title": "Landscape Architecture",
+        "description": "Enhance your landscape with beautiful patios.",
+        "image": { "url": "./assets/img/services03.webp", "alt": "Landscape Architecture" }
+      },
+      {
+        "icon": "fa-solid fa-seedling",
+        "title": "Seasonal Planting Services",
+        "description": "Keep your garden vibrant and healthy year-round.",
+        "image": { "url": "./assets/img/services04.webp", "alt": "Seasonal Planting" }
+      }
+    ]
+  },
+  "why_us_section": {
+    "eyebrow": "WHY US",
+    "title": "Our Commitment to Excellence",
+    "items": [
+      { "title": "Expertise & Experience", "description": "With years of industry experience, our skilled team brings unparalleled knowledge and creativity to every project." },
+      { "title": "Customized Solutions", "description": "We tailor our services to meet your unique needs and vision, ensuring each outdoor space reflects your personal style." },
+      { "title": "Sustainable Practices", "description": "We prioritize eco-friendly methods and materials, fostering beautiful landscapes that respect the environment." }
+    ],
+    "image": { "url": "./assets/img/why-choose-us.webp", "alt": "Why Choose Us" }
+  },
+  "testimonials_section": {
+    "eyebrow": "TESTIMONIALS",
+    "title": "Honest Reviews from our Customers",
+    "cards": [
+      {
+        "avatar": { "url": "./assets/img/testimonail01.webp", "alt": "Jane Anderson" },
+        "name": "Jane Anderson",
+        "location": "Homeowner, San Diego",
+        "review": "The team at Earthly Elegance totally transformed our backyard into a stunning oasis. Their attention to detail and creativity exceeded our expectations!",
+        "rating": 5
+      },
+      {
+        "avatar": { "url": "./assets/img/testimonail02.webp", "alt": "James Head" },
+        "name": "James Head",
+        "location": "Homeowner, New York City",
+        "review": "The team at Earthly Elegance totally transformed our backyard into a stunning oasis. Their attention to detail and creativity exceeded our expectations!",
+        "rating": 5
+      }
+    ]
+  },
+  "projects_section": {
+    "eyebrow": "OUR PROJECTS",
+    "title": "Our Stunning Projects",
+    "cta": { "text": "View All Projects", "link": "#" },
+    "cards": [
+      { "image": { "url": "./assets/img/projects01.webp", "alt": "Evening Garden" }, "overlay_text": null },
+      { "image": { "url": "./assets/img/projects02.webp", "alt": "Modern Backyard Retreat" }, "overlay_text": "Modern Backyard Retreat" },
+      { "image": { "url": "./assets/img/product03.webp", "alt": "Stone Garden Patio" }, "overlay_text": null }
+    ]
+  },
+  "cta_banner_section": {
+    "title": "Ready to transform your outdoor space?",
+    "description": "Contact us today to schedule a consultation or to learn more about our services.",
+    "cta": { "text": "Get A Free Quote", "link": "#" },
+    "background_image": "./assets/img/footer-bg.webp"
+  },
+  "services_hero_section": {
+    "title": "Our Services",
+    "subtitle": "From Innovative Design to Meticulous Maintenance, We Deliver Exceptional Results Tailored to your vision.",
+    "background_image": "./assets/img/services-hero-bg.webp"
+  },
+  "services_range_section": {
+    "eyebrow": "ALL SERVICES",
+    "title": "Our Full Range of Services",
+    "description": "Explore our comprehensive range of gardening and landscaping services designed to enhance the beauty and functionality of your outdoor spaces.",
+    "cards": [
+      {
+        "image": { "url": "./assets/img/services01.webp", "alt": "Garden Design and Planning" },
+        "title": "Garden Design & Planning",
+        "description": "We design personalized, breathtaking gardens that perfectly reflect your vision & lifestyle. Working closely, we meticulously craft and integrate every element into a outdoor sanctuary."
+      },
+      {
+        "image": { "url": "./assets/img/services02.webp", "alt": "Lawn Care and Maintenance" },
+        "title": "Lawn Care & Maintenance",
+        "description": "Our lawn care and maintenance services ensure your grass remains lush and healthy throughout the year. Trust us to keep your lawn looking pristine and inviting."
+      },
+      {
+        "image": { "url": "./assets/img/services03.webp", "alt": "Landscape Architecture" },
+        "title": "Landscape Architecture",
+        "description": "We craft outdoor environments that seamlessly blend aesthetics and function. From stunning patios to serene water features, every space is designed with intention and care."
+      },
+      {
+        "image": { "url": "./assets/img/services04.webp", "alt": "Seasonal Planting Services" },
+        "title": "Seasonal Planting Services",
+        "description": "We provide expert seasonal planting to keep your garden vibrant year-round. From spring blooms to winter-hardy shrubs, we select the best plants for every season."
+      }
+    ]
+  },
+  "legacy_section": {
+    "eyebrow": "OUR LEGACY",
+    "title": "Decades of Trusted Excellence",
+    "description": "Our extensive expertise allows us to tackle projects of any size and complexity, always delivering results that exceed expectations. Trust us to bring your outdoor dreams to life with a commitment to excellence that stands the test of time.",
+    "badge": { "number": "25+", "label": "Years of Experience" },
+    "checklist": ["Superior Workmanship", "Transparent Practices", "Creative Solutions"],
+    "cta": { "text": "Call Us Now", "link": "#" },
+    "image": { "url": "./assets/img/about-1.webp", "alt": "Experienced gardener" }
+  },
+  "footer_section": {
+    "brand": { "text": "Earthly Elegance", "icon": "fa-solid fa-leaf" },
+    "tagline": "Get Professional Gardening & Landscaping Services for a Greener Tomorrow",
+    "quick_links": {
+      "title": "Quick Links",
+      "links": [
+        { "text": "Home", "url": "#" },
+        { "text": "About", "url": "#" },
+        { "text": "Services", "url": "#" },
+        { "text": "Projects", "url": "#" },
+        { "text": "Contact", "url": "#" }
+      ]
+    },
+    "services": {
+      "title": "Services",
+      "links": [
+        { "text": "Outdoor Lighting", "url": "#" },
+        { "text": "Irrigation System", "url": "#" },
+        { "text": "Landscape Architecture", "url": "#" },
+        { "text": "Lawn Care & Maintenance", "url": "#" }
+      ]
+    },
+    "address": {
+      "title": "Address",
+      "street": "455 West Orchard Street Kings Mountain, NC 280867",
+      "phone": "(123) 123-0123"
+    },
+    "copyright": "Copyright © 2026 Earthly Elegance All rights reserved."
+  }
+}
