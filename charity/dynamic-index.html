@@ -2295,7 +2295,7 @@
                             <circle cx="13" cy="18" r="10" fill="none" stroke="white" stroke-width="2.5" />
                             <circle cx="23" cy="18" r="10" fill="none" stroke="#7FC629" stroke-width="2.5" />
                         </svg>
-                        Chanity
+                        {{navbar.brand.text}}
                     </a>
 
                     <!-- Hamburger Toggler (visible on mobile only) -->
@@ -2306,13 +2306,14 @@
                     <!-- Nav Collapse (Links + Donate Button) -->
                     <div class="navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav">
-                            <li><a href="#" class="nav-link active">Home</a></li>
-                            <li><a href="#" class="nav-link">About Us</a></li>
-                            <li><a href="#" class="nav-link">Our Work</a></li>
-                            <li><a href="#" class="nav-link">Stories</a></li>
-                            <li><a href="#" class="nav-link">Contact</a></li>
+                            <li><a href="{{navbar.links[0].link}}" class="nav-link active">{{navbar.links[0].text}}</a>
+                            </li>
+                            <li><a href="{{navbar.links[1].link}}" class="nav-link">{{navbar.links[1].text}}</a></li>
+                            <li><a href="{{navbar.links[2].link}}" class="nav-link">{{navbar.links[2].text}}</a></li>
+                            <li><a href="{{navbar.links[3].link}}" class="nav-link">{{navbar.links[3].text}}</a></li>
+                            <li><a href="{{navbar.links[4].link}}" class="nav-link">{{navbar.links[4].text}}</a></li>
                         </ul>
-                        <a href="#" class="btn-donate-outline">Donate</a>
+                        <a href="{{navbar.cta.link}}" class="btn-donate-outline">{{navbar.cta.text}}</a>
                     </div>
 
                 </div>
@@ -2326,15 +2327,14 @@
                     <div class="col-12">
 
                         <h1 class="hero-title">
-                            Empowering Change, One Step at a Time
+                            {{hero.title}}
                         </h1>
 
                         <p class="hero-subtitle">
-                            Every small act of kindness creates a ripple of positive change. Join us in making a
-                            difference lives together.
+                            {{hero.subtitle}}
                         </p>
 
-                        <a href="#" class="btn-donate-green">Donate Now</a>
+                        <a href="{{hero.cta.link}}" class="btn-donate-green">{{hero.cta.text}}</a>
 
                     </div>
                 </div>
@@ -2356,31 +2356,33 @@
                     <!-- Card 1: Causes -->
                     <div class="col-md-4 col-12 card-col proof-cards-container">
                         <div class="info-card">
-                            <p class="card-number">01.</p>
-                            <h3 class="card-title">Causes</h3>
-                            <p class="card-text">We support education, healthcare, and poverty reduction.</p>
-                            <a href="#" class="card-link">See Proof</a>
+                            <p class="card-number">{{info_cards_section[0].number}}</p>
+                            <h3 class="card-title">{{info_cards_section[0].title}}</h3>
+                            <p class="card-text">{{info_cards_section[0].description}}</p>
+                            <a href="{{info_cards_section[0].link.url}}"
+                                class="card-link">{{info_cards_section[0].link.text}}</a>
                         </div>
                     </div>
 
                     <!-- Card 2: Get Involved -->
                     <div class="col-md-4 col-12 card-col proof-cards-container">
                         <div class="info-card">
-                            <p class="card-number">02.</p>
-                            <h3 class="card-title">Get Involved</h3>
-                            <p class="card-text">Volunteer or donate your skills to make a difference.</p>
-                            <a href="#" class="card-link">View Financials</a>
+                            <p class="card-number">{{info_cards_section[1].number}}</p>
+                            <h3 class="card-title">{{info_cards_section[1].title}}</h3>
+                            <p class="card-text">{{info_cards_section[1].description}}</p>
+                            <a href="{{info_cards_section[1].link.url}}"
+                                class="card-link">{{info_cards_section[1].link.text}}</a>
                         </div>
                     </div>
 
                     <!-- Card 3: Donation -->
                     <div class="col-md-4 col-12 card-col proof-cards-container">
                         <div class="info-card">
-                            <p class="card-number">03.</p>
-                            <h3 class="card-title">Donation</h3>
-                            <p class="card-text">Contribute today and help us change lives and build a better future.
-                            </p>
-                            <a href="#" class="card-link">Learn More</a>
+                            <p class="card-number">{{info_cards_section[2].number}}</p>
+                            <h3 class="card-title">{{info_cards_section[2].title}}</h3>
+                            <p class="card-text">{{info_cards_section[2].description}}</p>
+                            <a href="{{info_cards_section[2].link.url}}"
+                                class="card-link">{{info_cards_section[2].link.text}}</a>
                         </div>
                     </div>
 
@@ -2398,14 +2400,12 @@
             <!-- Header Row -->
             <div class="row section-header-row align-items-start">
                 <div class="col-md-4 col-12">
-                    <span class="section-tag">Our Impact</span>
+                    <span class="section-tag">{{our_impact_vertical_section.eyebrow}}</span>
                 </div>
                 <div class="col-md-8 col-12">
-                    <h2 class="section-heading">The impact we have made in our community</h2>
+                    <h2 class="section-heading">{{our_impact_vertical_section.title}}</h2>
                     <p class="section-desc">
-                        Join us on a journey towards compassion and hope. Through our non-profit organisation, we strive
-                        to make a positive impact on the world. Give back to your community and be a part of something
-                        greater than yourself.
+                        {{our_impact_vertical_section.description}}
                     </p>
                 </div>
             </div>
@@ -2413,14 +2413,16 @@
             <!-- Vertical Images Row -->
             <div class="row impact-images-row">
                 <div class="col-md-4 col-12 image-col">
-                    <img src="./assets/img/journey-1.webp" alt="Education and volunteer classroom" class="impact-img">
+                    <img src="{{our_impact_vertical_section.images[0].url}}"
+                        alt="{{our_impact_vertical_section.images[0].alt}}" class="impact-img">
                 </div>
                 <div class="col-md-4 col-12 image-col">
-                    <img src="./assets/img/journey-2.webp" alt="Smiling children holding cups" class="impact-img">
+                    <img src="{{our_impact_vertical_section.images[1].url}}"
+                        alt="{{our_impact_vertical_section.images[1].alt}}" class="impact-img">
                 </div>
                 <div class="col-md-4 col-12 image-col">
-                    <img src="./assets/img/journey-3.webp" alt="Children washing hands under clean water tap"
-                        class="impact-img">
+                    <img src="{{our_impact_vertical_section.images[2].url}}"
+                        alt="{{our_impact_vertical_section.images[2].alt}}" class="impact-img">
                 </div>
             </div>
 
@@ -2428,26 +2430,26 @@
             <div class="row stats-row">
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">20M+</div>
-                        <p class="stat-label">People served worldwide</p>
+                        <div class="stat-number">{{our_impact_vertical_section.stats[0].number}}</div>
+                        <p class="stat-label">{{our_impact_vertical_section.stats[0].label}}</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">142,790</div>
-                        <p class="stat-label">Projects funded</p>
+                        <div class="stat-number">{{our_impact_vertical_section.stats[1].number}}</div>
+                        <p class="stat-label">{{our_impact_vertical_section.stats[1].label}}</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">1.8M</div>
-                        <p class="stat-label">People to take action</p>
+                        <div class="stat-number">{{our_impact_vertical_section.stats[2].number}}</div>
+                        <p class="stat-label">{{our_impact_vertical_section.stats[2].label}}</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">5,246</div>
-                        <p class="stat-label">Partner organizations</p>
+                        <div class="stat-number">{{our_impact_vertical_section.stats[3].number}}</div>
+                        <p class="stat-label">{{our_impact_vertical_section.stats[3].label}}</p>
                     </div>
                 </div>
             </div>
@@ -2463,15 +2465,12 @@
             <!-- Header Row -->
             <div class="row section-header-row align-items-start">
                 <div class="col-md-6 col-12">
-                    <span class="section-tag">Our Impact</span>
-                    <h2 class="section-heading">The impact we have made in our community</h2>
+                    <span class="section-tag">{{our_impact_cta_section.eyebrow}}</span>
+                    <h2 class="section-heading">{{our_impact_cta_section.title}}</h2>
                 </div>
                 <div class="col-md-6 col-12">
                     <p class="section-desc pt-md-4">
-                        We have made a significant impact in our community through our non-profit organization. By
-                        providing services and support to those in need, we have created a positive change. Our efforts
-                        have helped to improve the lives of many and we are committed to continuing to make a
-                        difference.
+                        {{our_impact_cta_section.description}}
                     </p>
                 </div>
             </div>
@@ -2480,26 +2479,26 @@
             <div class="row stats-row">
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">20M+</div>
-                        <p class="stat-label">People served worldwide</p>
+                        <div class="stat-number">{{our_impact_cta_section.stats[0].number}}</div>
+                        <p class="stat-label">{{our_impact_cta_section.stats[0].label}}</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">142,790</div>
-                        <p class="stat-label">Projects funded</p>
+                        <div class="stat-number">{{our_impact_cta_section.stats[1].number}}</div>
+                        <p class="stat-label">{{our_impact_cta_section.stats[1].label}}</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">1.8M</div>
-                        <p class="stat-label">People to take action</p>
+                        <div class="stat-number">{{our_impact_cta_section.stats[2].number}}</div>
+                        <p class="stat-label">{{our_impact_cta_section.stats[2].label}}</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-12 stat-col">
                     <div class="stat-item">
-                        <div class="stat-number">5,246</div>
-                        <p class="stat-label">Partner organizations</p>
+                        <div class="stat-number">{{our_impact_cta_section.stats[3].number}}</div>
+                        <p class="stat-label">{{our_impact_cta_section.stats[3].label}}</p>
                     </div>
                 </div>
             </div>
@@ -2509,12 +2508,12 @@
                 <div class="cta-banner">
                     <div class="row align-items-center">
                         <div class="col-md-8 col-12">
-                            <h3 class="cta-title">We can create a better tomorrow</h3>
-                            <p class="cta-desc">Every dollar counts and helps us bring hope and essential resources to
-                                those in need.</p>
+                            <h3 class="cta-title">{{our_impact_cta_section.cta_banner.title}}</h3>
+                            <p class="cta-desc">{{our_impact_cta_section.cta_banner.description}}</p>
                         </div>
                         <div class="col-md-4 col-12 text-md-end text-start mt-md-0 mt-3">
-                            <a href="#" class="btn-donate-white">Donate Now</a>
+                            <a href="{{our_impact_cta_section.cta_banner.cta.link}}"
+                                class="btn-donate-white">{{our_impact_cta_section.cta_banner.cta.text}}</a>
                         </div>
                     </div>
                 </div>
@@ -2532,18 +2531,17 @@
                 <!-- Left Image Column -->
                 <div class="col-md-6 col-12 mb-md-0 mb-4">
                     <div class="vision-image-wrapper">
-                        <img src="./assets/img/movement.webp" alt="Person holding donation box" class="vision-img">
+                        <img src="{{vision_mission_section.image.url}}" alt="{{vision_mission_section.image.alt}}"
+                            class="vision-img">
                     </div>
                 </div>
 
                 <!-- Right Text Column -->
                 <div class="col-md-6 col-12">
                     <div class="vision-content">
-                        <h2 class="section-heading">Our Vision & Mission</h2>
+                        <h2 class="section-heading">{{vision_mission_section.title}}</h2>
                         <p class="section-desc mb-4">
-                            Non-profit Organisation's vision is to create a world where all people have equal access to
-                            education and healthcare. Our mission is to provide the necessary resources and support to
-                            underprivileged communities to improve their quality of life.
+                            {{vision_mission_section.description}}
                         </p>
 
                         <!-- Mission Bullet Items -->
@@ -2555,8 +2553,8 @@
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
                                 </span>
-                                <p class="vision-text"><strong>Changing lives</strong> improving lives one step at a
-                                    time with our non-profit organization.</p>
+                                <p class="vision-text"><strong>{{vision_mission_section.points[0].bold_text}}</strong>
+                                    {{vision_mission_section.points[0].text}}</p>
                             </li>
                             <li class="vision-item">
                                 <span class="check-icon">
@@ -2565,8 +2563,8 @@
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
                                 </span>
-                                <p class="vision-text"><strong>Building futures</strong> creating opportunities and a
-                                    better future with our non-profit organization.</p>
+                                <p class="vision-text"><strong>{{vision_mission_section.points[1].bold_text}}</strong>
+                                    {{vision_mission_section.points[1].text}}</p>
                             </li>
                             <li class="vision-item">
                                 <span class="check-icon">
@@ -2575,8 +2573,8 @@
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
                                 </span>
-                                <p class="vision-text"><strong>Movement for change</strong> creating impact, promoting
-                                    change through non-profit work.</p>
+                                <p class="vision-text"><strong>{{vision_mission_section.points[2].bold_text}}</strong>
+                                    {{vision_mission_section.points[2].text}}</p>
                             </li>
                             <li class="vision-item">
                                 <span class="check-icon">
@@ -2585,8 +2583,8 @@
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
                                 </span>
-                                <p class="vision-text"><strong>Lasting impact</strong> our charity strives for long-term
-                                    impact in communities we serve.</p>
+                                <p class="vision-text"><strong>{{vision_mission_section.points[3].bold_text}}</strong>
+                                    {{vision_mission_section.points[3].text}}</p>
                             </li>
                         </ul>
                     </div>
@@ -2611,8 +2609,8 @@
                                 <polygon points="6 3 20 12 6 21 6 3"></polygon>
                             </svg>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80"
-                            alt="Volunteers packing food distribution boxes" class="video-img">
+                        <img src="{{contribution_video_section.video_poster.url}}"
+                            alt="{{contribution_video_section.video_poster.alt}}" class="video-img">
                     </div>
                 </div>
             </div>
@@ -2621,13 +2619,13 @@
             <div class="row justify-content-center text-center">
                 <div class="col-12">
                     <div class="cta-content-wrapper">
-                        <span class="cta-tag">Make a Difference Today</span>
-                        <h2 class="cta-heading">Your contribution matters. Support our cause by making a donation.</h2>
+                        <span class="cta-tag">{{contribution_video_section.eyebrow}}</span>
+                        <h2 class="cta-heading">{{contribution_video_section.title}}</h2>
                         <p class="cta-paragraph">
-                            Every dollar counts and helps us bring hope, joy, and essential resources to those in need.
-                            Together, we can create a better tomorrow.
+                            {{contribution_video_section.description}}
                         </p>
-                        <a href="#" class="btn-donate-primary">Donate Today</a>
+                        <a href="{{contribution_video_section.cta.link}}"
+                            class="btn-donate-primary">{{contribution_video_section.cta.text}}</a>
                     </div>
                 </div>
             </div>
@@ -2644,10 +2642,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-12">
-                        <h1 class="about-banner-title">About Us</h1>
+                        <h1 class="about-banner-title">{{about_gallery_section.banner.title}}</h1>
                         <p class="about-banner-desc">
-                            Learn more about our non-profit organization and our mission to make a positive impact on
-                            the world through our charitable initiatives.
+                            {{about_gallery_section.banner.description}}
                         </p>
                     </div>
                 </div>
@@ -2661,24 +2658,22 @@
                     <!-- Left Text Column -->
                     <div class="col-md-6 col-12 mb-md-0 mb-5">
                         <div class="about-text-wrapper">
-                            <h2 class="section-heading">Making the world a better place</h2>
+                            <h2 class="section-heading">{{about_gallery_section.content.title}}</h2>
                             <p class="section-desc mb-4">
-                                Join Non-profit Organisation in our mission of making the world a better place. We
-                                strive to create positive change through various charitable initiatives and community
-                                outreach programs.
+                                {{about_gallery_section.content.description}}
                             </p>
 
                             <!-- Vertical border list -->
                             <div class="about-features">
                                 <div class="feature-item">
-                                    <h3 class="feature-title">Changing Lives</h3>
-                                    <p class="feature-text">Improving lives one step at a time with our non-profit
-                                        organization.</p>
+                                    <h3 class="feature-title">{{about_gallery_section.content.features[0].title}}</h3>
+                                    <p class="feature-text">{{about_gallery_section.content.features[0].description}}
+                                    </p>
                                 </div>
                                 <div class="feature-item">
-                                    <h3 class="feature-title">Building Futures</h3>
-                                    <p class="feature-text">Creating opportunities and a better future with our
-                                        non-profit organization.</p>
+                                    <h3 class="feature-title">{{about_gallery_section.content.features[1].title}}</h3>
+                                    <p class="feature-text">{{about_gallery_section.content.features[1].description}}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -2690,17 +2685,20 @@
                             <div class="row g-3">
                                 <!-- Left Column of Grid -->
                                 <div class="col-6 about-grid-col-1 mb-sm-20">
-                                    <img src="./assets/img/journey-1.webp" alt="Hands holding a yellow flower"
+                                    <img src="{{about_gallery_section.content.gallery[0].url}}"
+                                        alt="{{about_gallery_section.content.gallery[0].alt}}"
                                         class="about-grid-img img-tall mb-3">
-                                    <img src="./assets/img/journey-2.webp" alt="Donation box full of items"
+                                    <img src="{{about_gallery_section.content.gallery[1].url}}"
+                                        alt="{{about_gallery_section.content.gallery[1].alt}}"
                                         class="about-grid-img img-wide">
                                 </div>
                                 <!-- Right Column of Grid -->
                                 <div class="col-6 about-grid-col-2">
-                                    <img src="./assets/img/journey-3.webp"
-                                        alt="Volunteers packing food distribution boxes"
+                                    <img src="{{about_gallery_section.content.gallery[2].url}}"
+                                        alt="{{about_gallery_section.content.gallery[2].alt}}"
                                         class="about-grid-img img-wide mb-3">
-                                    <img src="./assets/img/card-1.webp" alt="Volunteers distributing meals"
+                                    <img src="{{about_gallery_section.content.gallery[3].url}}"
+                                        alt="{{about_gallery_section.content.gallery[3].alt}}"
                                         class="about-grid-img img-tall">
                                 </div>
                             </div>
@@ -2722,19 +2720,16 @@
                 <!-- Left Column: Content -->
                 <div class="col-md-6 col-12">
                     <div class="journey-content">
-                        <span class="journey-tag">About Us</span>
-                        <h2 class="journey-heading">Our journey of compassion and hope</h2>
+                        <span class="journey-tag">{{journey_collage_section.eyebrow}}</span>
+                        <h2 class="journey-heading">{{journey_collage_section.title}}</h2>
                         <p class="journey-text">
-                            Join us on a journey towards compassion and hope. Through our non-profit organisation, we
-                            strive
-                            to make a positive impact on the world. Give back to your community and be a part of
-                            something
-                            greater than yourself.
+                            {{journey_collage_section.description}}
                         </p>
                         <p class="journey-text secondary">
-                            A transformational journey towards bringing hope and compassion to the world.
+                            {{journey_collage_section.sub_description}}
                         </p>
-                        <a href="#" class="btn-read-more">Read More</a>
+                        <a href="{{journey_collage_section.cta.link}}"
+                            class="btn-read-more">{{journey_collage_section.cta.text}}</a>
                     </div>
                 </div>
 
@@ -2742,14 +2737,16 @@
                 <div class="col-md-6 col-12">
                     <div class="journey-grid">
                         <div class="journey-col col-left">
-                            <img src="./assets/img/journey-1.webp" alt="Hands holding a yellow flower"
-                                class="journey-img">
-                            <img src="./assets/img/journey-2.webp" alt="Donation box full of items" class="journey-img">
+                            <img src="{{journey_collage_section.gallery[0].url}}"
+                                alt="{{journey_collage_section.gallery[0].alt}}" class="journey-img">
+                            <img src="{{journey_collage_section.gallery[1].url}}"
+                                alt="{{journey_collage_section.gallery[1].alt}}" class="journey-img">
                         </div>
                         <div class="journey-col col-right">
-                            <img src="./assets/img/journey-3.webp" alt="Volunteers packing food distribution boxes"
-                                class="journey-img">
-                            <img src="./assets/img/card-1.webp" alt="Volunteers distributing meals" class="journey-img">
+                            <img src="{{journey_collage_section.gallery[2].url}}"
+                                alt="{{journey_collage_section.gallery[2].alt}}" class="journey-img">
+                            <img src="{{journey_collage_section.gallery[3].url}}"
+                                alt="{{journey_collage_section.gallery[3].alt}}" class="journey-img">
                         </div>
                     </div>
                 </div>
@@ -2766,10 +2763,9 @@
         <!-- Dark Banner -->
         <div class="contact-banner">
             <div class="container">
-                <h1 class="contact-banner-title">Contact</h1>
+                <h1 class="contact-banner-title">{{contact_banner_section.banner.title}}</h1>
                 <p class="contact-banner-desc">
-                    Connect with us for more information about our Non-profit Organisation and how you can contribute to
-                    our worthy causes.
+                    {{contact_banner_section.banner.description}}
                 </p>
             </div>
         </div>
@@ -2780,25 +2776,27 @@
                     <div class="row g-0 contact-card">
                         <!-- Column 1: Phone -->
                         <div class="col-md-4 col-12 contact-info-col">
-                            <span class="contact-info-tag">PHONE</span>
+                            <span class="contact-info-tag">{{contact_banner_section.cards.phone.title}}</span>
                             <p class="contact-info-text">
-                                <strong>Tel: <a href="tel:5551232222">(555) 123-2222</a></strong><br>
-                                <strong>Fax: (555) 123-2225</strong>
+                                <strong>Tel: <a
+                                        href="tel:{{contact_banner_section.cards.phone.tel}}">{{contact_banner_section.cards.phone.tel}}</a></strong><br>
+                                <strong>Fax: {{contact_banner_section.cards.phone.fax}}</strong>
                             </p>
                         </div>
                         <!-- Column 2: Donation Center -->
                         <div class="col-md-4 col-12 contact-info-col">
-                            <span class="contact-info-tag">DONATION CENTER</span>
+                            <span class="contact-info-tag">{{contact_banner_section.cards.donation_center.title}}</span>
                             <p class="contact-info-text">
-                                <strong>PO Box 1234 Demotown,</strong><br>
-                                <strong>MD12345-5026</strong>
+                                <strong>{{contact_banner_section.cards.donation_center.address_line_1}}</strong><br>
+                                <strong>{{contact_banner_section.cards.donation_center.address_line_2}}</strong>
                             </p>
                         </div>
                         <!-- Column 3: Need Assistance? -->
                         <div class="col-md-4 col-12 contact-info-col">
-                            <span class="contact-info-tag">NEED ASSISTANCE?</span>
+                            <span class="contact-info-tag">{{contact_banner_section.cards.assistance.title}}</span>
                             <p class="contact-info-text">
-                                <strong><a href="#" class="contact-help-link">Check out our Help Center.</a></strong>
+                                <strong><a href="{{contact_banner_section.cards.assistance.link_url}}"
+                                        class="contact-help-link">{{contact_banner_section.cards.assistance.link_text}}</a></strong>
                             </p>
                         </div>
                     </div>
@@ -2812,11 +2810,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="section-11__title">Inspiring tales of transformation</h1>
+                    <h1 class="section-11__title">{{inspiring_stories_section.header.title}}</h1>
                     <p class="section-11__subtitle">
-                        Get inspired by the remarkable stories of transformation through our non-profit organization.
-                        Join us
-                        in making a positive impact today.
+                        {{inspiring_stories_section.header.description}}
                     </p>
                 </div>
             </div>
@@ -2832,15 +2828,16 @@
                 <div class="col-6 col-md-12">
                     <div class="story-card">
                         <div class="story-card__img-wrap">
-                            <img src="./assets/img/card-1.webp" alt="The Special One" class="story-card__img">
+                            <img src="{{inspiring_stories_section.cards[0].image}}"
+                                alt="{{inspiring_stories_section.cards[0].title}}" class="story-card__img">
                         </div>
                         <div class="story-card__body">
-                            <h3 class="story-card__title">The Special One</h3>
+                            <h3 class="story-card__title">{{inspiring_stories_section.cards[0].title}}</h3>
                             <p class="story-card__text">
-                                Join our non-profit organisation to help create a brighter future for those in need.
-                                Every donation counts towards making a difference in the lives of those less fortunate.
+                                {{inspiring_stories_section.cards[0].description}}
                             </p>
-                            <a href="#" class="story-card__link">Read More &#8594;</a>
+                            <a href="{{inspiring_stories_section.cards[0].link.url}}"
+                                class="story-card__link">{{inspiring_stories_section.cards[0].link.text}} &#8594;</a>
                         </div>
                     </div>
                 </div>
@@ -2849,17 +2846,16 @@
                 <div class="col-6 col-md-12 second-story-card">
                     <div class="story-card">
                         <div class="story-card__img-wrap">
-                            <img src="./assets/img/card-2.webp" alt="A Better Education for Everyone"
-                                class="story-card__img">
+                            <img src="{{inspiring_stories_section.cards[1].image}}"
+                                alt="{{inspiring_stories_section.cards[1].title}}" class="story-card__img">
                         </div>
                         <div class="story-card__body">
-                            <h3 class="story-card__title">A Better Education for Everyone</h3>
+                            <h3 class="story-card__title">{{inspiring_stories_section.cards[1].title}}</h3>
                             <p class="story-card__text">
-                                Our non-profit organisation is dedicated to improving access to education for all.
-                                With your support, we can help provide the resources and opportunities needed for
-                                success.
+                                {{inspiring_stories_section.cards[1].description}}
                             </p>
-                            <a href="#" class="story-card__link">Read More &#8594;</a>
+                            <a href="{{inspiring_stories_section.cards[1].link.url}}"
+                                class="story-card__link">{{inspiring_stories_section.cards[1].link.text}} &#8594;</a>
                         </div>
                     </div>
                 </div>
@@ -2878,7 +2874,7 @@
                 <!-- Col 1 : Image -->
                 <div class="col-6 col-md-12">
                     <div class="movement__img-wrap">
-                        <img src="./assets/img/movement.webp" alt="Volunteers holding aid boxes"
+                        <img src="{{movement_join_section.image.url}}" alt="{{movement_join_section.image.alt}}"
                             class="movement__img img-fluid">
                     </div>
                 </div>
@@ -2886,18 +2882,16 @@
                 <!-- Col 2 : Content -->
                 <div class="col-6 col-md-12">
                     <div class="movement__content">
-                        <span class="movement__eyebrow">GET INVOLVED</span>
-                        <h2 class="movement__title">Join our movement for change</h2>
+                        <span class="movement__eyebrow">{{movement_join_section.eyebrow}}</span>
+                        <h2 class="movement__title">{{movement_join_section.title}}</h2>
                         <p class="movement__text">
-                            Join our non-profit organisation and be a part of our movement for positive change.
-                            We empower communities, support vulnerable individuals and strive towards building an
-                            equitable society. Together, we can create a better world. Join us now!
+                            {{movement_join_section.paragraphs[0]}}
                         </p>
                         <p class="movement__text">
-                            Become part of a transformative movement by supporting our non-profit organization.
-                            Together we can make lasting change.
+                            {{movement_join_section.paragraphs[1]}}
                         </p>
-                        <a href="#" class="btn movement__btn">Register Now</a>
+                        <a href="{{movement_join_section.cta.link}}"
+                            class="btn movement__btn">{{movement_join_section.cta.text}}</a>
                     </div>
                 </div>
 
@@ -2910,20 +2904,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <span class="where__eyebrow">WHERE WE WORK</span>
+                    <span class="where__eyebrow">{{where_we_work_section.eyebrow}}</span>
                     <h2 class="where__title">
-                        More than 70,000 staff in 120 countries,<br>
-                        serving those in need. 99% of them are<br>
-                        locals. All with your support.
+                        {{where_we_work_section.title}}
                     </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="where__map-wrap">
-                        <iframe class="where__map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60962.458744140454!2d73.77393!3d18.5204303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        <iframe class="where__map" src="{{where_we_work_section.map_iframe_url}}" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                             title="Where We Work Map"></iframe>
                     </div>
                 </div>
@@ -2938,42 +2929,43 @@
                 <div class="col-6 col-md-12">
 
                     <!-- Eyebrow + Heading + Intro -->
-                    <span class="contact__eyebrow">GET IN TOUCH</span>
-                    <h2 class="contact__title">How can we help you?</h2>
+                    <span class="contact__eyebrow">{{get_in_touch_section.eyebrow}}</span>
+                    <h2 class="contact__title">{{get_in_touch_section.title}}</h2>
                     <p class="contact__intro">
-                        Our Non-profit Organisation is dedicated to helping those in need.<br>
-                        Contact us to see how we can help you or someone you know.
+                        {{get_in_touch_section.intro_text}}
                     </p>
 
                     <!-- Office Block 1 -->
                     <div class="contact__office">
-                        <h4 class="contact__office-name">Headquarter</h4>
-                        <p class="contact__office-detail">2715 Demo St. San Jose, South Dakota 83475</p>
-                        <p class="contact__office-detail">(205) 555-0100</p>
+                        <h4 class="contact__office-name">{{get_in_touch_section.offices[0].name}}</h4>
+                        <p class="contact__office-detail">{{get_in_touch_section.offices[0].address}}</p>
+                        <p class="contact__office-detail">{{get_in_touch_section.offices[0].phone}}</p>
                     </div>
                     <hr class="contact__divider">
 
                     <!-- Office Block 2 -->
                     <div class="contact__office">
-                        <h4 class="contact__office-name">Illinois Office</h4>
-                        <p class="contact__office-detail">2972 Example Rd. Santa Ana, Illinois 85486</p>
-                        <p class="contact__office-detail">(603) 555-0123</p>
+                        <h4 class="contact__office-name">{{get_in_touch_section.offices[1].name}}</h4>
+                        <p class="contact__office-detail">{{get_in_touch_section.offices[1].address}}</p>
+                        <p class="contact__office-detail">{{get_in_touch_section.offices[1].phone}}</p>
                     </div>
                     <hr class="contact__divider">
 
                     <!-- Social -->
                     <div class="contact__social">
-                        <p class="contact__social-label">Follow us on</p>
+                        <p class="contact__social-label">{{get_in_touch_section.social_label}}</p>
                         <div class="contact__social-icons d-flex gap-3">
                             <!-- Facebook -->
-                            <a href="#" class="contact__social-link" aria-label="Facebook">
+                            <a href="{{get_in_touch_section.socials[0].url}}" class="contact__social-link"
+                                aria-label="Facebook">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="currentColor">
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                                 </svg>
                             </a>
                             <!-- Twitter / X -->
-                            <a href="#" class="contact__social-link" aria-label="Twitter">
+                            <a href="{{get_in_touch_section.socials[1].url}}" class="contact__social-link"
+                                aria-label="Twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="currentColor">
                                     <path
@@ -2981,7 +2973,8 @@
                                 </svg>
                             </a>
                             <!-- Instagram -->
-                            <a href="#" class="contact__social-link" aria-label="Instagram">
+                            <a href="{{get_in_touch_section.socials[2].url}}" class="contact__social-link"
+                                aria-label="Instagram">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -2991,7 +2984,8 @@
                                 </svg>
                             </a>
                             <!-- YouTube -->
-                            <a href="#" class="contact__social-link" aria-label="YouTube">
+                            <a href="{{get_in_touch_section.socials[3].url}}" class="contact__social-link"
+                                aria-label="YouTube">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="currentColor">
                                     <path
@@ -3016,12 +3010,14 @@
                 <div class="col-12">
                     <div class="section-16__cta-banner">
                         <div class="section-16__cta-content">
-                            <h2 class="section-16__cta-title">We can create a better tomorrow</h2>
-                            <p class="section-16__cta-desc">Every dollar counts and helps us bring hope and essential
-                                resources to those in need.</p>
+                            <h2 class="section-16__cta-title">{{transformation_stories_cta_section.cta_banner.title}}
+                            </h2>
+                            <p class="section-16__cta-desc">
+                                {{transformation_stories_cta_section.cta_banner.description}}</p>
                         </div>
                         <div class="section-16__cta-action">
-                            <a href="#" class="section-16__donate-btn">Donate Now</a>
+                            <a href="{{transformation_stories_cta_section.cta_banner.cta.link}}"
+                                class="section-16__donate-btn">{{transformation_stories_cta_section.cta_banner.cta.text}}</a>
                         </div>
                     </div>
                 </div>
@@ -3031,11 +3027,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-16__heading-wrap">
-                        <h2 class="section-16__heading">Inspiring tales of transformation</h2>
+                        <h2 class="section-16__heading">{{transformation_stories_cta_section.heading.title}}</h2>
                         <p class="section-16__subheading">
-                            Get inspired by the remarkable stories of transformation through our non-profit
-                            organization. Join us
-                            in making a positive impact today.
+                            {{transformation_stories_cta_section.heading.description}}
                         </p>
                     </div>
                 </div>
@@ -3059,41 +3053,60 @@
                             <circle cx="13" cy="18" r="10" fill="none" stroke="currentColor" stroke-width="2.5" />
                             <circle cx="23" cy="18" r="10" fill="none" stroke="#7FC629" stroke-width="2.5" />
                         </svg>
-                        Chanity
+                        {{footer_section.brand.text}}
                     </a>
-                    <p class="footer-desc">The power of giving: Support a cause and make a difference through charity.
-                    </p>
+                    <p class="footer-desc">{{footer_section.description}}</p>
                 </div>
 
                 <!-- Column 2: About Us Links -->
                 <div class="col-md-3 col-12 footer-col">
-                    <h4 class="footer-heading">About Us</h4>
+                    <h4 class="footer-heading">{{footer_section.about_us.title}}</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Our History</a></li>
-                        <li><a href="#">What We Believe</a></li>
-                        <li><a href="#">Our Programs</a></li>
-                        <li><a href="#">Partners</a></li>
+                        <li><a
+                                href="{{footer_section.about_us.links[0].url}}">{{footer_section.about_us.links[0].text}}</a>
+                        </li>
+                        <li><a
+                                href="{{footer_section.about_us.links[1].url}}">{{footer_section.about_us.links[1].text}}</a>
+                        </li>
+                        <li><a
+                                href="{{footer_section.about_us.links[2].url}}">{{footer_section.about_us.links[2].text}}</a>
+                        </li>
+                        <li><a
+                                href="{{footer_section.about_us.links[3].url}}">{{footer_section.about_us.links[3].text}}</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Column 3: Ways to Give Links -->
                 <div class="col-md-3 col-12 footer-col">
-                    <h4 class="footer-heading">Ways To Give</h4>
+                    <h4 class="footer-heading">{{footer_section.ways_to_give.title}}</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Fundraise</a></li>
-                        <li><a href="#">Planned Giving</a></li>
-                        <li><a href="#">Brand Partnership</a></li>
-                        <li><a href="#">Legacy Giving</a></li>
+                        <li><a
+                                href="{{footer_section.ways_to_give.links[0].url}}">{{footer_section.ways_to_give.links[0].text}}</a>
+                        </li>
+                        <li><a
+                                href="{{footer_section.ways_to_give.links[1].url}}">{{footer_section.ways_to_give.links[1].text}}</a>
+                        </li>
+                        <li><a
+                                href="{{footer_section.ways_to_give.links[2].url}}">{{footer_section.ways_to_give.links[2].text}}</a>
+                        </li>
+                        <li><a
+                                href="{{footer_section.ways_to_give.links[3].url}}">{{footer_section.ways_to_give.links[3].text}}</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Column 4: Contact Info -->
                 <div class="col-md-3 col-12 footer-col">
-                    <h4 class="footer-heading">Contact Info</h4>
+                    <h4 class="footer-heading">{{footer_section.contact_info.title}}</h4>
                     <ul class="contact-list">
-                        <li>1234 Thornridge Cir. Syracuse,<br>Connecticut 56789</li>
-                        <li><a href="tel:4065550121">(406) 555-0121</a></li>
-                        <li><a href="mailto:mail@example.com">mail@example.com</a></li>
+                        <li>{{footer_section.contact_info.address}}</li>
+                        <li><a
+                                href="tel:{{footer_section.contact_info.phone}}">{{footer_section.contact_info.phone}}</a>
+                        </li>
+                        <li><a
+                                href="mailto:{{footer_section.contact_info.email}}">{{footer_section.contact_info.email}}</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -3104,28 +3117,28 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p class="copyright-text">© 2026 Non-Profit Organization. All rights reserved.</p>
+                <p class="copyright-text">{{footer_section.copyright}}</p>
                 <div class="d-flex align-items-center gap-4">
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
+                        <a href="{{footer_section.socials[0].url}}" class="social-link" aria-label="Facebook">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
+                        <a href="{{footer_section.socials[1].url}}" class="social-link" aria-label="Twitter">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
+                        <a href="{{footer_section.socials[2].url}}" class="social-link" aria-label="Instagram">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
+                        <a href="{{footer_section.socials[3].url}}" class="social-link" aria-label="YouTube">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.002 3.002 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
